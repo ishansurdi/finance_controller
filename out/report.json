@@ -63,7 +63,8 @@
         "accuracy": 1.0
       }
     },
-    "throughput_records_per_second": 19447.21431040949,
+    "records_processed": 353,
+    "throughput_note": "Runtime throughput is printed to console and excluded for reproducibility.",
     "resolved_per_tier": {
       "0": 36,
       "1": 31
@@ -89,12 +90,12 @@
     }
   },
   "with_agents": {
-    "match_rate": 1.0,
-    "exception_precision": 1.0,
+    "match_rate": 0.9634146341463414,
+    "exception_precision": 0.8571428571428571,
     "exception_recall": 1.0,
     "confusion_matrix": {
-      "matched_as_matched": 82,
-      "matched_as_exception": 0,
+      "matched_as_matched": 79,
+      "matched_as_exception": 3,
       "matched_as_missing": 0,
       "exception_as_matched": 0,
       "exception_as_exception": 18,
@@ -112,9 +113,9 @@
         "accuracy": 1.0
       },
       "narration_recovery": {
-        "correct": 10,
+        "correct": 7,
         "total": 10,
-        "accuracy": 1.0
+        "accuracy": 0.7
       },
       "timing_lag": {
         "correct": 10,
@@ -152,25 +153,26 @@
         "accuracy": 1.0
       }
     },
-    "throughput_records_per_second": 19447.21431040949,
+    "records_processed": 353,
+    "throughput_note": "Runtime throughput is printed to console and excluded for reproducibility.",
     "resolved_per_tier": {
       "0": 36,
       "1": 31,
-      "2": 15
+      "2": 12
     },
     "exceptions_per_tier": {
       "1": 14,
-      "2": 4
+      "2": 7
     },
     "control_totals": {
-      "matched_gateway_net_paise": 64689598,
-      "matched_bank_paise": 64691366,
-      "residual_paise": 1768
+      "matched_gateway_net_paise": 63027139,
+      "matched_bank_paise": 63028324,
+      "residual_paise": 1185
     },
     "estimated_error_cost_paise": {
-      "false_review_cost": 0,
+      "false_review_cost": 7500,
       "false_auto_match_cost": 0,
-      "total": 0
+      "total": 7500
     },
     "error_costs": {
       "false_positive": "good match sent to human review",
@@ -180,13 +182,61 @@
     }
   },
   "ablation": {
-    "match_rate_delta": 0.18292682926829273,
-    "agent_groups_recovered": 15,
+    "match_rate_delta": 0.14634146341463417,
+    "agent_groups_recovered": 12,
     "deterministic_auto_matched": 67,
-    "agent_augmented_auto_matched": 82,
+    "agent_augmented_auto_matched": 79,
     "exceptions_escalated_after_agents": 18,
-    "tier_two_escalations": 4
+    "tier_two_escalations": 7
   },
-  "agent_backend": "offline_evidence_backend",
+  "tier_two_score": {
+    "resolvable_residual_groups": 15,
+    "recovery_attempts": 12,
+    "correct_recoveries": 12,
+    "recovery_accuracy": 0.8,
+    "recovery_precision": 1.0,
+    "resolvable_escalations": 3,
+    "correct_safety_escalations": 4
+  },
+  "confidence_cost_curve": {
+    "selected_threshold": 0.9,
+    "selection_basis": "minimum expected business cost; not maximum F1",
+    "false_auto_match_to_review_cost_ratio": 400,
+    "points": [
+      {
+        "threshold": 0.5,
+        "false_review_cost": 7500,
+        "false_auto_match_cost": 0,
+        "total": 7500
+      },
+      {
+        "threshold": 0.7,
+        "false_review_cost": 7500,
+        "false_auto_match_cost": 0,
+        "total": 7500
+      },
+      {
+        "threshold": 0.9,
+        "false_review_cost": 7500,
+        "false_auto_match_cost": 0,
+        "total": 7500
+      },
+      {
+        "threshold": 0.95,
+        "false_review_cost": 45000,
+        "false_auto_match_cost": 0,
+        "total": 45000
+      },
+      {
+        "threshold": 0.99,
+        "false_review_cost": 115000,
+        "false_auto_match_cost": 0,
+        "total": 115000
+      }
+    ]
+  },
+  "agent_backend": "recorded_replay",
+  "agent_model": "offline-evidence-baseline",
+  "agent_temperature": 0,
   "structural_anomalies": []
 }
