@@ -1,5 +1,6 @@
 """Run deterministic reconciliation and print an honest scorecard."""
 
+import argparse
 import json
 from datetime import datetime, timezone
 from pathlib import Path
@@ -14,6 +15,18 @@ from recon.residual import conclusive_decisions, isolate_residual
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--agent-backend", choices=("offline", "openai"), default="offline")
+    args = parser.parse_args()
+    if args.agent_backend == "openai":
+        from recon.openai_backend import OpenAIBackend
+        try:
+            backend = OpenAIBackend()
+        except ValueError as error:
+            parser.error(str(error))
+    else:
+        from recon.agents import EvidenceBackend
+        backend = EvidenceBackend()
     root = Path(__file__).resolve().parent
     data, out = root / "data", root / "out"
     ledger = load_ledger(data / "ledger.csv")
@@ -24,7 +37,7 @@ def main() -> None:
     started = perf_counter()
     deterministic = reconcile(ledger, gateway, bank)
     residual = isolate_residual(ledger, gateway, bank, deterministic)
-    agent_decisions = reconcile_residual(residual)
+    agent_decisions = reconcile_residual(residual, backend)
     retained = conclusive_decisions(bank, deterministic)
     decisions = retained + agent_decisions
     elapsed = perf_counter() - started
@@ -35,6 +48,7 @@ def main() -> None:
                             control_total(decisions, gateway, bank))
     report = {"deterministic_only": deterministic_report, "with_agents": agent_report,
               "ablation": ablation(deterministic_report, agent_report),
+              "agent_backend": backend.name,
               "structural_anomalies": list(anomalies)}
     out.mkdir(exist_ok=True)
     run_at = datetime.now(timezone.utc).isoformat()

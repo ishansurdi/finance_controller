@@ -3,11 +3,27 @@
 import re
 from dataclasses import dataclass
 from itertools import groupby
+from typing import Protocol
 
 from .models import BankRow, Decision, GatewayRow
 from .residual import Residual
 
 ID_PATTERN = re.compile(r"\b(?:TXN|ORD)\d{5}\b")
+
+
+class NarrationBackend(Protocol):
+    name: str
+
+    def extract_ids(self, narration: str) -> tuple[str, ...]: ...
+
+
+class EvidenceBackend:
+    """Reproducible offline backend used by tests and deterministic demos."""
+
+    name = "offline_evidence_backend"
+
+    def extract_ids(self, narration: str) -> tuple[str, ...]:
+        return tuple(dict.fromkeys(ID_PATTERN.findall(narration.upper())))
 
 
 @dataclass(frozen=True)
@@ -18,13 +34,14 @@ class Proposal:
     rationale: str
 
 
-def propose(residual: Residual) -> tuple[Proposal, ...]:
+def propose(residual: Residual, backend: NarrationBackend | None = None) -> tuple[Proposal, ...]:
     """Interpret narration and propose links without authority to close books."""
+    backend = backend or EvidenceBackend()
     txns = {row.txn_id: row for row in residual.gateway}
     orders = {row.order_id: row for row in residual.gateway}
     proposals: list[Proposal] = []
     for bank in residual.bank:
-        ids = tuple(dict.fromkeys(ID_PATTERN.findall(bank.bank_narration.upper())))
+        ids = backend.extract_ids(bank.bank_narration)
         referenced_txns = [txns[value] for value in ids if value in txns]
         referenced_orders = [orders[value] for value in ids if value in orders]
         candidate = referenced_txns[0] if len(referenced_txns) == 1 else None
@@ -84,9 +101,10 @@ def _merge_collisions(decisions: list[Decision], residual: Residual) -> list[Dec
     return merged
 
 
-def reconcile_residual(residual: Residual) -> tuple[Decision, ...]:
+def reconcile_residual(residual: Residual,
+                       backend: NarrationBackend | None = None) -> tuple[Decision, ...]:
     """Run proposer then verifier and preserve unresolved records as exceptions."""
-    verified = _merge_collisions([verify(item) for item in propose(residual)], residual)
+    verified = _merge_collisions([verify(item) for item in propose(residual, backend)], residual)
     used_txns = {value for decision in verified for value in decision.txn_ids}
     used_utrs = {value for decision in verified for value in decision.utrs}
     for txn in residual.gateway:
