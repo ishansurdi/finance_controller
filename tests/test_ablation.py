@@ -16,6 +16,7 @@ class AblationTests(unittest.TestCase):
         self.assertAlmostEqual(result["match_rate_delta"], 0.1)
         self.assertEqual(result["agent_groups_recovered"], 10)
         self.assertEqual(result["tier_two_escalations"], 2)
+        self.assertEqual(result["true_exceptions_caught"], 5)
 
     def test_tier_two_scores_recovery_and_escalation_separately(self):
         truth = (

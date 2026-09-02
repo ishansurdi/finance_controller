@@ -76,7 +76,7 @@ def main() -> None:
           f"({tier_two['recovery_accuracy']:.1%} accurate)")
     print(f"Correct safety escalations{tier_two['correct_safety_escalations']:>9}")
     print(f"Resolvable misses       {tier_two['resolvable_escalations']:>12}")
-    print(f"Total honest exceptions{report['ablation']['exceptions_escalated_after_agents']:>12}")
+    print(f"True exceptions caught  {report['ablation']['true_exceptions_caught']:>12}")
     throughput = record_count / elapsed if elapsed else 0.0
     print(f"Throughput              {throughput:>12,.0f} records/sec (observed, not persisted)")
     print(f"Control residual        {agent_report['control_totals']['residual_paise']:>+12,} paise")
@@ -84,6 +84,7 @@ def main() -> None:
     for name, values in agent_report["per_break_type"].items():
         print(f"  {name:<20} {values['correct']:>3}/{values['total']:<3} {values['accuracy']:>7.1%}")
     exceptions = [d for d in decisions if d.state == "exception"]
+    print(f"Review queue rows        {len(exceptions):>12}")
     print(f"\nEXCEPTIONS ({len(exceptions)})")
     for item in exceptions[:10]:
         ids = "|".join(item.order_ids + item.txn_ids + item.utrs)

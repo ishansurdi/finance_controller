@@ -71,7 +71,7 @@ def ablation(deterministic: dict[str, object], augmented: dict[str, object]) -> 
         "agent_groups_recovered": augmented_tiers.get("2", 0),
         "deterministic_auto_matched": sum(deterministic_tiers.values()),
         "agent_augmented_auto_matched": sum(augmented_tiers.values()),
-        "exceptions_escalated_after_agents": augmented["confusion_matrix"]["exception_as_exception"],
+        "true_exceptions_caught": augmented["confusion_matrix"]["exception_as_exception"],
         "tier_two_escalations": augmented.get("exceptions_per_tier", {}).get("2", 0),
     }
 

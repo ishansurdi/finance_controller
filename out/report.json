@@ -186,7 +186,7 @@
     "agent_groups_recovered": 12,
     "deterministic_auto_matched": 67,
     "agent_augmented_auto_matched": 79,
-    "exceptions_escalated_after_agents": 18,
+    "true_exceptions_caught": 18,
     "tier_two_escalations": 7
   },
   "tier_two_score": {
