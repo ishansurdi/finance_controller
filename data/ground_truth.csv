@@ -1,101 +1,101 @@
 match_group_id,primary_break_type,order_ids,txn_ids,utrs,expected_outcome,expected_exception_reason,notes
-GRP00001,rounding,ORD00001,TXN00001,UTR00001,matched,,Bank settlement differs from gateway net by -1 paise.
-GRP00002,clean,ORD00002,TXN00002,UTR00002,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00003,duplicate,ORD00003,TXN00003|TXN00004,UTR00003,exception,duplicate transaction reference,Two captured gateway records share an order ID; only the first was settled.
-GRP00004,clean,ORD00004,TXN00005,UTR00004,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00005,rounding,ORD00005,TXN00006,UTR00005,matched,,Bank settlement differs from gateway net by +1 paise.
-GRP00006,clean,ORD00006,TXN00007,UTR00006,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00007,clean,ORD00007,TXN00008,UTR00007,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00008,clean,ORD00008,TXN00009,UTR00008,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00009,clean,ORD00009,TXN00010,UTR00009,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00010,timing_lag,ORD00010,TXN00011,UTR00010,matched,,Settlement arrived T+4 instead of T+2.
-GRP00011,clean,ORD00011,TXN00012,UTR00011,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00012,clean,ORD00012,TXN00013,UTR00012,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00013,clean,ORD00013,TXN00014,UTR00013,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00014,batched,ORD00014|ORD00015|ORD00016|ORD00017,TXN00015|TXN00016|TXN00017|TXN00018,UTR00014,matched,,Multiple gateway transactions combined into one bank credit.
-GRP00015,clean,ORD00018,TXN00019,UTR00015,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00016,duplicate,ORD00019,TXN00020|TXN00021,UTR00016,exception,duplicate transaction reference,Two captured gateway records share an order ID; only the first was settled.
-GRP00017,duplicate,ORD00020,TXN00022|TXN00023,UTR00017,exception,duplicate transaction reference,Two captured gateway records share an order ID; only the first was settled.
-GRP00018,clean,ORD00021,TXN00024,UTR00018,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00019,partial,ORD00022,TXN00025,UTR00019|UTR00020,matched,,One transaction settled in two bank credits whose amounts sum to net.
-GRP00020,clean,ORD00023,TXN00026,UTR00021,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00021,batched,ORD00024|ORD00025|ORD00026|ORD00027,TXN00027|TXN00028|TXN00029|TXN00030,UTR00022,matched,,Multiple gateway transactions combined into one bank credit.
-GRP00022,clean,ORD00028,TXN00031,UTR00023,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00023,clean,ORD00029,TXN00032,UTR00024,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00024,timing_lag,ORD00030,TXN00033,UTR00025,matched,,Settlement arrived T+4 instead of T+2.
-GRP00025,timing_lag,ORD00031,TXN00034,UTR00026,matched,,Settlement arrived T+5 instead of T+2.
-GRP00026,rounding,ORD00032,TXN00035,UTR00027,matched,,Bank settlement differs from gateway net by -2 paise.
-GRP00027,clean,ORD00033,TXN00036,UTR00028,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00028,clean,ORD00034,TXN00037,UTR00029,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00029,orphan,,,UTR00030,exception,bank credit with no matching order,Standalone bank credit with no ledger or gateway record.
-GRP00030,clean,ORD00035,TXN00038,UTR00031,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00031,orphan,,,UTR00032,exception,bank credit with no matching order,Standalone bank credit with no ledger or gateway record.
-GRP00032,clean,ORD00036,TXN00039,UTR00033,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00033,clean,ORD00037,TXN00040,UTR00034,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00034,batched,ORD00038|ORD00039|ORD00040|ORD00041,TXN00041|TXN00042|TXN00043|TXN00044,UTR00035,matched,,Multiple gateway transactions combined into one bank credit.
-GRP00035,clean,ORD00042,TXN00045,UTR00036,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00036,clean,ORD00043,TXN00046,UTR00037,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00037,partial,ORD00044,TXN00047,UTR00038|UTR00039,matched,,One transaction settled in two bank credits whose amounts sum to net.
-GRP00038,timing_lag,ORD00045,TXN00048,UTR00040,matched,,Settlement arrived T+4 instead of T+2.
-GRP00039,clean,ORD00046,TXN00049,UTR00041,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00040,rounding,ORD00047,TXN00050,UTR00042,matched,,Bank settlement differs from gateway net by -2 paise.
-GRP00041,timing_lag,ORD00048,TXN00051,UTR00043,matched,,Settlement arrived T+4 instead of T+2.
-GRP00042,batched,ORD00049|ORD00050|ORD00051|ORD00052|ORD00053,TXN00052|TXN00053|TXN00054|TXN00055|TXN00056,UTR00044,matched,,Multiple gateway transactions combined into one bank credit.
-GRP00043,timing_lag,ORD00054,TXN00057,UTR00045,matched,,Settlement arrived T+5 instead of T+2.
-GRP00044,duplicate,ORD00055,TXN00058|TXN00059,UTR00046,exception,duplicate transaction reference,Two captured gateway records share an order ID; only the first was settled.
-GRP00045,clean,ORD00056,TXN00060,UTR00047,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00046,partial,ORD00057,TXN00061,UTR00048|UTR00049,matched,,One transaction settled in two bank credits whose amounts sum to net.
-GRP00047,clean,ORD00058,TXN00062,UTR00050,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00048,partial,ORD00059,TXN00063,UTR00051|UTR00052,matched,,One transaction settled in two bank credits whose amounts sum to net.
-GRP00049,duplicate,ORD00060,TXN00064|TXN00065,UTR00053,exception,duplicate transaction reference,Two captured gateway records share an order ID; only the first was settled.
-GRP00050,batched,ORD00061|ORD00062|ORD00063|ORD00064,TXN00066|TXN00067|TXN00068|TXN00069,UTR00054,matched,,Multiple gateway transactions combined into one bank credit.
-GRP00051,clean,ORD00065,TXN00070,UTR00055,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00052,clean,ORD00066,TXN00071,UTR00056,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00053,clean,ORD00067,TXN00072,UTR00057,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00054,orphan,,,UTR00058,exception,bank credit with no matching order,Standalone bank credit with no ledger or gateway record.
-GRP00055,clean,ORD00068,TXN00073,UTR00059,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00056,rounding,ORD00069,TXN00074,UTR00060,matched,,Bank settlement differs from gateway net by -2 paise.
-GRP00057,partial,ORD00070,TXN00075,UTR00061|UTR00062,matched,,One transaction settled in two bank credits whose amounts sum to net.
-GRP00058,clean,ORD00071,TXN00076,UTR00063,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00059,clean,ORD00072,TXN00077,UTR00064,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00060,orphan,,,UTR00065,exception,bank credit with no matching order,Standalone bank credit with no ledger or gateway record.
-GRP00061,clean,ORD00073,TXN00078,UTR00066,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00062,timing_lag,ORD00074,TXN00079,UTR00067,matched,,Settlement arrived T+5 instead of T+2.
-GRP00063,clean,ORD00075,TXN00080,UTR00068,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00064,clean,ORD00076,TXN00081,UTR00069,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00065,duplicate,ORD00077,TXN00082|TXN00083,UTR00070,exception,duplicate transaction reference,Two captured gateway records share an order ID; only the first was settled.
-GRP00066,timing_lag,ORD00078,TXN00084,UTR00071,matched,,Settlement arrived T+4 instead of T+2.
-GRP00067,clean,ORD00079,TXN00085,UTR00072,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00068,clean,ORD00080,TXN00086,UTR00073,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00069,duplicate,ORD00081,TXN00087|TXN00088,UTR00074,exception,duplicate transaction reference,Two captured gateway records share an order ID; only the first was settled.
-GRP00070,orphan,,,UTR00075,exception,bank credit with no matching order,Standalone bank credit with no ledger or gateway record.
-GRP00071,timing_lag,ORD00082,TXN00089,UTR00076,matched,,Settlement arrived T+5 instead of T+2.
-GRP00072,clean,ORD00083,TXN00090,UTR00077,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00073,timing_lag,ORD00084,TXN00091,UTR00078,matched,,Settlement arrived T+5 instead of T+2.
-GRP00074,duplicate,ORD00085,TXN00092|TXN00093,UTR00079,exception,duplicate transaction reference,Two captured gateway records share an order ID; only the first was settled.
-GRP00075,clean,ORD00086,TXN00094,UTR00080,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00076,clean,ORD00087,TXN00095,UTR00081,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00077,clean,ORD00088,TXN00096,UTR00082,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00078,partial,ORD00089,TXN00097,UTR00083|UTR00084,matched,,One transaction settled in two bank credits whose amounts sum to net.
-GRP00079,clean,ORD00090,TXN00098,UTR00085,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00080,partial,ORD00091,TXN00099,UTR00086|UTR00087,matched,,One transaction settled in two bank credits whose amounts sum to net.
-GRP00081,rounding,ORD00092,TXN00100,UTR00088,matched,,Bank settlement differs from gateway net by -1 paise.
-GRP00082,clean,ORD00093,TXN00101,UTR00089,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00083,partial,ORD00094,TXN00102,UTR00090|UTR00091,matched,,One transaction settled in two bank credits whose amounts sum to net.
-GRP00084,clean,ORD00095,TXN00103,UTR00092,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00085,rounding,ORD00096,TXN00104,UTR00093,matched,,Bank settlement differs from gateway net by -2 paise.
-GRP00086,batched,ORD00097|ORD00098|ORD00099,TXN00105|TXN00106|TXN00107,UTR00094,matched,,Multiple gateway transactions combined into one bank credit.
-GRP00087,batched,ORD00100|ORD00101|ORD00102|ORD00103,TXN00108|TXN00109|TXN00110|TXN00111,UTR00095,matched,,Multiple gateway transactions combined into one bank credit.
-GRP00088,rounding,ORD00104,TXN00112,UTR00096,matched,,Bank settlement differs from gateway net by +1 paise.
-GRP00089,batched,ORD00105|ORD00106|ORD00107|ORD00108,TXN00113|TXN00114|TXN00115|TXN00116,UTR00097,matched,,Multiple gateway transactions combined into one bank credit.
-GRP00090,duplicate,ORD00109,TXN00117|TXN00118,UTR00098,exception,duplicate transaction reference,Two captured gateway records share an order ID; only the first was settled.
-GRP00091,orphan,,,UTR00099,exception,bank credit with no matching order,Standalone bank credit with no ledger or gateway record.
-GRP00092,timing_lag,ORD00110,TXN00119,UTR00100,matched,,Settlement arrived T+5 instead of T+2.
-GRP00093,partial,ORD00111,TXN00120,UTR00101|UTR00102,matched,,One transaction settled in two bank credits whose amounts sum to net.
-GRP00094,clean,ORD00112,TXN00121,UTR00103,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00095,partial,ORD00113,TXN00122,UTR00104|UTR00105,matched,,One transaction settled in two bank credits whose amounts sum to net.
-GRP00096,clean,ORD00114,TXN00123,UTR00106,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
-GRP00097,timing_lag,ORD00115,TXN00124,UTR00107,matched,,Settlement arrived T+5 instead of T+2.
-GRP00098,orphan,,,UTR00108,exception,bank credit with no matching order,Standalone bank credit with no ledger or gateway record.
-GRP00099,duplicate,ORD00116,TXN00125|TXN00126,UTR00109,exception,duplicate transaction reference,Two captured gateway records share an order ID; only the first was settled.
-GRP00100,clean,ORD00117,TXN00127,UTR00110,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00001,same_amount_collision,ORD00001|ORD00002,TXN00001|TXN00002,UTR00001|UTR00002,matched,,Equal amount and date collision; narration uniquely identifies both pairs.
+GRP00002,clean,ORD00003,TXN00003,UTR00003,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00003,narration_recovery,ORD00004,TXN00004,UTR00004,matched,,Amount has a documented adjustment beyond deterministic tolerance; narration identifies it.
+GRP00004,clean,ORD00005,TXN00005,UTR00005,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00005,narration_recovery,ORD00006,TXN00006,UTR00006,matched,,Amount has a documented adjustment beyond deterministic tolerance; narration identifies it.
+GRP00006,clean,ORD00007,TXN00007,UTR00007,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00007,timing_lag,ORD00008,TXN00008,UTR00008,matched,,Settlement arrived T+4 instead of T+2.
+GRP00008,timing_lag,ORD00009,TXN00009,UTR00009,matched,,Settlement arrived T+5 instead of T+2.
+GRP00009,clean,ORD00010,TXN00010,UTR00010,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00010,partial,ORD00011,TXN00011,UTR00011|UTR00012,matched,,One transaction settled in two bank credits whose amounts sum to net.
+GRP00011,clean,ORD00012,TXN00012,UTR00013,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00012,clean,ORD00013,TXN00013,UTR00014,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00013,clean,ORD00014,TXN00014,UTR00015,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00014,partial,ORD00015,TXN00015,UTR00016|UTR00017,matched,,One transaction settled in two bank credits whose amounts sum to net.
+GRP00015,clean,ORD00016,TXN00016,UTR00018,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00016,orphan,,,UTR00019,exception,bank credit with no matching order,Standalone bank credit with no ledger or gateway record.
+GRP00017,orphan,,,UTR00020,exception,bank credit with no matching order,Standalone bank credit with no ledger or gateway record.
+GRP00018,timing_lag,ORD00017,TXN00017,UTR00021,matched,,Settlement arrived T+4 instead of T+2.
+GRP00019,duplicate,ORD00018,TXN00018|TXN00019,UTR00022,exception,duplicate transaction reference,Two captured gateway records share an order ID; only the first was settled.
+GRP00020,clean,ORD00019,TXN00020,UTR00023,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00021,duplicate,ORD00020,TXN00021|TXN00022,UTR00024,exception,duplicate transaction reference,Two captured gateway records share an order ID; only the first was settled.
+GRP00022,timing_lag,ORD00021,TXN00023,UTR00025,matched,,Settlement arrived T+5 instead of T+2.
+GRP00023,clean,ORD00022,TXN00024,UTR00026,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00024,partial,ORD00023,TXN00025,UTR00027|UTR00028,matched,,One transaction settled in two bank credits whose amounts sum to net.
+GRP00025,batched,ORD00024|ORD00025|ORD00026|ORD00027,TXN00026|TXN00027|TXN00028|TXN00029,UTR00029,matched,,Multiple gateway transactions combined into one bank credit.
+GRP00026,narration_recovery,ORD00028,TXN00030,UTR00030,matched,,Amount has a documented adjustment beyond deterministic tolerance; narration identifies it.
+GRP00027,clean,ORD00029,TXN00031,UTR00031,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00028,clean,ORD00030,TXN00032,UTR00032,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00029,agent_disagreement,ORD00031,TXN00033,UTR00033,exception,conflicting bank narration,Narration conflicts with the order evidence; proposer and verifier must escalate.
+GRP00030,clean,ORD00032,TXN00034,UTR00034,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00031,agent_disagreement,ORD00033,TXN00035,UTR00035,exception,conflicting bank narration,Narration conflicts with the order evidence; proposer and verifier must escalate.
+GRP00032,timing_lag,ORD00034,TXN00036,UTR00036,matched,,Settlement arrived T+4 instead of T+2.
+GRP00033,clean,ORD00035,TXN00037,UTR00037,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00034,duplicate,ORD00036,TXN00038|TXN00039,UTR00038,exception,duplicate transaction reference,Two captured gateway records share an order ID; only the first was settled.
+GRP00035,clean,ORD00037,TXN00040,UTR00039,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00036,clean,ORD00038,TXN00041,UTR00040,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00037,rounding,ORD00039,TXN00042,UTR00041,matched,,Bank settlement differs from gateway net by -1 paise.
+GRP00038,batched,ORD00040|ORD00041|ORD00042|ORD00043|ORD00044,TXN00043|TXN00044|TXN00045|TXN00046|TXN00047,UTR00042,matched,,Multiple gateway transactions combined into one bank credit.
+GRP00039,clean,ORD00045,TXN00048,UTR00043,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00040,same_amount_collision,ORD00046|ORD00047,TXN00049|TXN00050,UTR00044|UTR00045,matched,,Equal amount and date collision; narration uniquely identifies both pairs.
+GRP00041,batched,ORD00048|ORD00049|ORD00050|ORD00051,TXN00051|TXN00052|TXN00053|TXN00054,UTR00046,matched,,Multiple gateway transactions combined into one bank credit.
+GRP00042,duplicate,ORD00052,TXN00055|TXN00056,UTR00047,exception,duplicate transaction reference,Two captured gateway records share an order ID; only the first was settled.
+GRP00043,partial,ORD00053,TXN00057,UTR00048|UTR00049,matched,,One transaction settled in two bank credits whose amounts sum to net.
+GRP00044,narration_recovery,ORD00054,TXN00058,UTR00050,matched,,Amount has a documented adjustment beyond deterministic tolerance; narration identifies it.
+GRP00045,clean,ORD00055,TXN00059,UTR00051,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00046,rounding,ORD00056,TXN00060,UTR00052,matched,,Bank settlement differs from gateway net by +1 paise.
+GRP00047,clean,ORD00057,TXN00061,UTR00053,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00048,rounding,ORD00058,TXN00062,UTR00054,matched,,Bank settlement differs from gateway net by -1 paise.
+GRP00049,orphan,,,UTR00055,exception,bank credit with no matching order,Standalone bank credit with no ledger or gateway record.
+GRP00050,duplicate,ORD00059,TXN00063|TXN00064,UTR00056,exception,duplicate transaction reference,Two captured gateway records share an order ID; only the first was settled.
+GRP00051,clean,ORD00060,TXN00065,UTR00057,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00052,timing_lag,ORD00061,TXN00066,UTR00058,matched,,Settlement arrived T+4 instead of T+2.
+GRP00053,clean,ORD00062,TXN00067,UTR00059,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00054,same_amount_collision,ORD00063|ORD00064,TXN00068|TXN00069,UTR00060|UTR00061,matched,,Equal amount and date collision; narration uniquely identifies both pairs.
+GRP00055,clean,ORD00065,TXN00070,UTR00062,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00056,narration_recovery,ORD00066,TXN00071,UTR00063,matched,,Amount has a documented adjustment beyond deterministic tolerance; narration identifies it.
+GRP00057,duplicate,ORD00067,TXN00072|TXN00073,UTR00064,exception,duplicate transaction reference,Two captured gateway records share an order ID; only the first was settled.
+GRP00058,clean,ORD00068,TXN00074,UTR00065,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00059,clean,ORD00069,TXN00075,UTR00066,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00060,agent_disagreement,ORD00070,TXN00076,UTR00067,exception,conflicting bank narration,Narration conflicts with the order evidence; proposer and verifier must escalate.
+GRP00061,clean,ORD00071,TXN00077,UTR00068,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00062,partial,ORD00072,TXN00078,UTR00069|UTR00070,matched,,One transaction settled in two bank credits whose amounts sum to net.
+GRP00063,clean,ORD00073,TXN00079,UTR00071,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00064,clean,ORD00074,TXN00080,UTR00072,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00065,narration_recovery,ORD00075,TXN00081,UTR00073,matched,,Amount has a documented adjustment beyond deterministic tolerance; narration identifies it.
+GRP00066,batched,ORD00076|ORD00077,TXN00082|TXN00083,UTR00074,matched,,Multiple gateway transactions combined into one bank credit.
+GRP00067,timing_lag,ORD00078,TXN00084,UTR00075,matched,,Settlement arrived T+4 instead of T+2.
+GRP00068,clean,ORD00079,TXN00085,UTR00076,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00069,orphan,,,UTR00077,exception,bank credit with no matching order,Standalone bank credit with no ledger or gateway record.
+GRP00070,same_amount_collision,ORD00080|ORD00081,TXN00086|TXN00087,UTR00078|UTR00079,matched,,Equal amount and date collision; narration uniquely identifies both pairs.
+GRP00071,batched,ORD00082|ORD00083,TXN00088|TXN00089,UTR00080,matched,,Multiple gateway transactions combined into one bank credit.
+GRP00072,timing_lag,ORD00084,TXN00090,UTR00081,matched,,Settlement arrived T+5 instead of T+2.
+GRP00073,batched,ORD00085|ORD00086|ORD00087,TXN00091|TXN00092|TXN00093,UTR00082,matched,,Multiple gateway transactions combined into one bank credit.
+GRP00074,narration_recovery,ORD00088,TXN00094,UTR00083,matched,,Amount has a documented adjustment beyond deterministic tolerance; narration identifies it.
+GRP00075,clean,ORD00089,TXN00095,UTR00084,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00076,clean,ORD00090,TXN00096,UTR00085,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00077,clean,ORD00091,TXN00097,UTR00086,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00078,duplicate,ORD00092,TXN00098|TXN00099,UTR00087,exception,duplicate transaction reference,Two captured gateway records share an order ID; only the first was settled.
+GRP00079,clean,ORD00093,TXN00100,UTR00088,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00080,rounding,ORD00094,TXN00101,UTR00089,matched,,Bank settlement differs from gateway net by +2 paise.
+GRP00081,narration_recovery,ORD00095,TXN00102,UTR00090,matched,,Amount has a documented adjustment beyond deterministic tolerance; narration identifies it.
+GRP00082,clean,ORD00096,TXN00103,UTR00091,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00083,rounding,ORD00097,TXN00104,UTR00092,matched,,Bank settlement differs from gateway net by -1 paise.
+GRP00084,timing_lag,ORD00098,TXN00105,UTR00093,matched,,Settlement arrived T+5 instead of T+2.
+GRP00085,narration_recovery,ORD00099,TXN00106,UTR00094,matched,,Amount has a documented adjustment beyond deterministic tolerance; narration identifies it.
+GRP00086,partial,ORD00100,TXN00107,UTR00095|UTR00096,matched,,One transaction settled in two bank credits whose amounts sum to net.
+GRP00087,partial,ORD00101,TXN00108,UTR00097|UTR00098,matched,,One transaction settled in two bank credits whose amounts sum to net.
+GRP00088,narration_recovery,ORD00102,TXN00109,UTR00099,matched,,Amount has a documented adjustment beyond deterministic tolerance; narration identifies it.
+GRP00089,partial,ORD00103,TXN00110,UTR00100|UTR00101,matched,,One transaction settled in two bank credits whose amounts sum to net.
+GRP00090,orphan,,,UTR00102,exception,bank credit with no matching order,Standalone bank credit with no ledger or gateway record.
+GRP00091,agent_disagreement,ORD00104,TXN00111,UTR00103,exception,conflicting bank narration,Narration conflicts with the order evidence; proposer and verifier must escalate.
+GRP00092,timing_lag,ORD00105,TXN00112,UTR00104,matched,,Settlement arrived T+4 instead of T+2.
+GRP00093,duplicate,ORD00106,TXN00113|TXN00114,UTR00105,exception,duplicate transaction reference,Two captured gateway records share an order ID; only the first was settled.
+GRP00094,clean,ORD00107,TXN00115,UTR00106,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00095,rounding,ORD00108,TXN00116,UTR00107,matched,,Bank settlement differs from gateway net by -2 paise.
+GRP00096,clean,ORD00109,TXN00117,UTR00108,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."
+GRP00097,batched,ORD00110|ORD00111|ORD00112|ORD00113,TXN00118|TXN00119|TXN00120|TXN00121,UTR00109,matched,,Multiple gateway transactions combined into one bank credit.
+GRP00098,same_amount_collision,ORD00114|ORD00115,TXN00122|TXN00123,UTR00110|UTR00111,matched,,Equal amount and date collision; narration uniquely identifies both pairs.
+GRP00099,orphan,,,UTR00112,exception,bank credit with no matching order,Standalone bank credit with no ledger or gateway record.
+GRP00100,clean,ORD00116,TXN00124,UTR00113,matched,,"Standard one-to-one settlement with fee, GST, and T+2 timing."

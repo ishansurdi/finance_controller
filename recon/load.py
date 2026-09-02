@@ -40,10 +40,10 @@ def load_gateway(path: Path) -> tuple[GatewayRow, ...]:
 
 
 def load_bank(path: Path) -> tuple[BankRow, ...]:
-    fields = ("utr", "settlement_amount_paise", "value_date")
+    fields = ("utr", "settlement_amount_paise", "value_date", "bank_narration")
     return _read(path, fields, lambda r, n: BankRow(r["utr"],
         _money(r["settlement_amount_paise"], "settlement_amount_paise", n),
-        date.fromisoformat(r["value_date"])))
+        date.fromisoformat(r["value_date"]), r["bank_narration"]))
 
 
 def load_ground_truth(path: Path) -> tuple[MatchGroup, ...]:

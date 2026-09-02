@@ -1,0 +1,33 @@
+import csv
+import tempfile
+import unittest
+from pathlib import Path
+
+import generate_data
+from recon.load import load_bank
+
+
+class HardCaseTests(unittest.TestCase):
+    def test_break_mix_allocates_hard_residual(self):
+        counts = {name: generate_data.allocate_break_types(100).count(name)
+                  for name in generate_data.BREAK_MIX}
+
+        self.assertEqual(counts["narration_recovery"], 10)
+        self.assertEqual(counts["same_amount_collision"], 5)
+        self.assertEqual(counts["agent_disagreement"], 4)
+
+    def test_bank_loader_preserves_narration(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "bank.csv"
+            with path.open("w", newline="", encoding="utf-8") as handle:
+                writer = csv.writer(handle)
+                writer.writerow(("utr", "settlement_amount_paise", "value_date", "bank_narration"))
+                writer.writerow(("U1", "100", "2026-01-03", "PG REF T1"))
+
+            row = load_bank(path)[0]
+
+        self.assertEqual(row.bank_narration, "PG REF T1")
+
+
+if __name__ == "__main__":
+    unittest.main()

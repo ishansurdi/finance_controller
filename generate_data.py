@@ -13,13 +13,16 @@ from pathlib import Path
 SEED = 20260902
 N_GROUPS = 100
 BREAK_MIX = {
-    "clean": 0.45,
-    "timing_lag": 0.12,
-    "batched": 0.08,
-    "partial": 0.10,
-    "duplicate": 0.10,
-    "rounding": 0.08,
-    "orphan": 0.07,
+    "clean": 0.36,
+    "timing_lag": 0.10,
+    "batched": 0.07,
+    "partial": 0.08,
+    "duplicate": 0.08,
+    "rounding": 0.06,
+    "orphan": 0.06,
+    "narration_recovery": 0.10,
+    "same_amount_collision": 0.05,
+    "agent_disagreement": 0.04,
 }
 
 
@@ -31,7 +34,7 @@ GATEWAY_FIELDS = (
     "txn_id", "order_id", "gross_amount_paise", "fee_paise",
     "gst_on_fee_paise", "net_amount_paise", "captured_at", "payment_status",
 )
-BANK_FIELDS = ("utr", "settlement_amount_paise", "value_date")
+BANK_FIELDS = ("utr", "settlement_amount_paise", "value_date", "bank_narration")
 GROUND_TRUTH_FIELDS = (
     "match_group_id", "primary_break_type", "order_ids", "txn_ids", "utrs",
     "expected_outcome", "expected_exception_reason", "notes",
@@ -60,7 +63,8 @@ def allocate_break_types(n_groups: int) -> list[str]:
     if n_groups < 0:
         raise ValueError("N_GROUPS must be non-negative")
     if set(BREAK_MIX) != set((
-        "clean", "timing_lag", "batched", "partial", "duplicate", "rounding", "orphan"
+        "clean", "timing_lag", "batched", "partial", "duplicate", "rounding", "orphan",
+        "narration_recovery", "same_amount_collision", "agent_disagreement"
     )):
         raise ValueError("BREAK_MIX must contain exactly the seven supported break types")
     if any(isinstance(weight, bool) or not isinstance(weight, (int, float)) or weight < 0
@@ -121,10 +125,11 @@ class Generator:
             return self.rng.randint(250_001, 1_500_000)
         return self.rng.randint(1_500_001, 7_500_000)
 
-    def add_normal_transaction(self, created_at: datetime | None = None) -> tuple[str, str, int, datetime]:
+    def add_normal_transaction(self, created_at: datetime | None = None,
+                               gross_amount_paise: int | None = None) -> tuple[str, str, int, datetime]:
         created = created_at or self.random_time()
         captured = created + timedelta(minutes=self.rng.randint(1, 240))
-        gross = self.random_amount()
+        gross = gross_amount_paise if gross_amount_paise is not None else self.random_amount()
         fee, gst, net = economics(gross)
         order_id = self.next_id("order")
         txn_id = self.next_id("txn")
@@ -147,12 +152,13 @@ class Generator:
         })
         return order_id, txn_id, net, captured
 
-    def add_bank_credit(self, amount: int, value_date: datetime) -> str:
+    def add_bank_credit(self, amount: int, value_date: datetime, narration: str = "") -> str:
         utr = self.next_id("utr")
         self.bank.append({
             "utr": utr,
             "settlement_amount_paise": amount,
             "value_date": value_date.date().isoformat(),
+            "bank_narration": narration,
         })
         return utr
 
@@ -194,10 +200,38 @@ class Generator:
                            "Multiple gateway transactions combined into one bank credit.")
             return
 
+        if break_type == "same_amount_collision":
+            shared_time = self.random_time()
+            shared_gross = self.random_amount()
+            first = self.add_normal_transaction(shared_time, shared_gross)
+            second = self.add_normal_transaction(shared_time, shared_gross)
+            orders = [first[0], second[0]]
+            txns = [first[1], second[1]]
+            utrs = [
+                self.add_bank_credit(first[2], first[3] + timedelta(days=2),
+                                     f"PG SETTLEMENT REF {first[1]} / {first[0]}"),
+                self.add_bank_credit(second[2], second[3] + timedelta(days=2),
+                                     f"PG SETTLEMENT REF {second[1]} / {second[0]}"),
+            ]
+            self.add_truth(group_number, break_type, orders, txns, utrs, "matched", "",
+                           "Equal amount and date collision; narration uniquely identifies both pairs.")
+            return
+
         order, txn, net, captured = self.add_normal_transaction()
         orders, txns = [order], [txn]
 
-        if break_type == "timing_lag":
+        if break_type == "narration_recovery":
+            adjustment = self.rng.randint(25, 250)
+            narration = f"PG NET {txn}; ORDER {order}; ADJ {adjustment}P"
+            utrs = [self.add_bank_credit(net + adjustment, captured + timedelta(days=2), narration)]
+            notes = "Amount has a documented adjustment beyond deterministic tolerance; narration identifies it."
+            outcome, reason = "matched", ""
+        elif break_type == "agent_disagreement":
+            narration = f"PG NET TXN99999; ORDER {order}; CONFLICTING REFERENCE"
+            utrs = [self.add_bank_credit(net + 100, captured + timedelta(days=2), narration)]
+            notes = "Narration conflicts with the order evidence; proposer and verifier must escalate."
+            outcome, reason = "exception", "conflicting bank narration"
+        elif break_type == "timing_lag":
             lag_days = self.rng.choice((4, 5))
             utrs = [self.add_bank_credit(net, captured + timedelta(days=lag_days))]
             notes = f"Settlement arrived T+{lag_days} instead of T+2."

@@ -30,6 +30,7 @@ class BankRow:
     utr: str
     settlement_amount_paise: int
     value_date: date
+    bank_narration: str = ""
 
 
 @dataclass(frozen=True)
@@ -57,4 +58,3 @@ class Decision:
     tolerance_used: str
     reason_code: str = ""
     review_recommended: bool = False
-
