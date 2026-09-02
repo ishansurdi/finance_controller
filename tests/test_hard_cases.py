@@ -37,6 +37,15 @@ class HardCaseTests(unittest.TestCase):
 
         self.assertEqual(len(missing), 3)
 
+    def test_hard_multiplier_increases_hard_case_share(self):
+        baseline = generate_data.scaled_break_mix(1.0)
+        harder = generate_data.scaled_break_mix(2.0)
+        hard_types = ("narration_recovery", "same_amount_collision", "agent_disagreement")
+
+        self.assertGreater(sum(harder[name] for name in hard_types),
+                           sum(baseline[name] for name in hard_types))
+        self.assertAlmostEqual(sum(harder.values()), 1.0)
+
 
 if __name__ == "__main__":
     unittest.main()

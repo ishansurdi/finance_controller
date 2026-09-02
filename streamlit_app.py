@@ -2,6 +2,8 @@
 
 import csv
 import json
+import subprocess
+import sys
 from pathlib import Path
 
 import streamlit as st
@@ -18,6 +20,28 @@ def rupees(paise: int) -> str:
 st.set_page_config(page_title="AI Finance Controller", layout="wide")
 st.title("AI Finance Controller")
 st.caption("Deterministic reconciliation, verified residual recovery, and honest escalation")
+
+with st.sidebar:
+    st.header("Live batch controls")
+    group_count = st.slider("Match groups", 50, 250, 100, 10)
+    hard_multiplier = st.slider("Hard-case intensity", 0.5, 2.0, 1.0, 0.1)
+    if st.button("Regenerate and run", type="primary", use_container_width=True):
+        generator = subprocess.run(
+            [sys.executable, str(ROOT / "generate_data.py"), "--groups", str(group_count),
+             "--hard-multiplier", str(hard_multiplier)],
+            cwd=ROOT, capture_output=True, text=True,
+        )
+        if generator.returncode != 0:
+            st.error(generator.stderr)
+            st.stop()
+        reconciliation = subprocess.run(
+            [sys.executable, str(ROOT / "run_recon.py"), "--agent-backend", "offline"],
+            cwd=ROOT, capture_output=True, text=True,
+        )
+        if reconciliation.returncode != 0:
+            st.error(reconciliation.stderr)
+            st.stop()
+        st.success("Dataset regenerated and reconciliation completed.")
 
 report_path = ROOT / "out" / "report.json"
 exceptions_path = ROOT / "out" / "exceptions.csv"

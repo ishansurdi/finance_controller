@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import argparse
 import random
 from collections import Counter
 from datetime import datetime, timedelta, timezone
@@ -59,34 +60,47 @@ def economics(gross_amount_paise: int) -> tuple[int, int, int]:
     return fee_paise, gst_on_fee_paise, net_amount_paise
 
 
-def allocate_break_types(n_groups: int) -> list[str]:
+def scaled_break_mix(hard_multiplier: float) -> dict[str, float]:
+    """Scale the evidence-dependent slice and renormalize all proportions."""
+    if hard_multiplier <= 0:
+        raise ValueError("hard_multiplier must be positive")
+    hard_types = {"narration_recovery", "same_amount_collision", "agent_disagreement"}
+    weighted = {name: weight * (hard_multiplier if name in hard_types else 1.0)
+                for name, weight in BREAK_MIX.items()}
+    total = sum(weighted.values())
+    return {name: weight / total for name, weight in weighted.items()}
+
+
+def allocate_break_types(n_groups: int,
+                         break_mix: dict[str, float] | None = None) -> list[str]:
+    break_mix = break_mix or BREAK_MIX
     if n_groups < 0:
         raise ValueError("N_GROUPS must be non-negative")
-    if set(BREAK_MIX) != set((
+    if set(break_mix) != set((
         "clean", "timing_lag", "batched", "partial", "duplicate", "rounding", "orphan",
         "narration_recovery", "same_amount_collision", "agent_disagreement"
     )):
         raise ValueError("BREAK_MIX must contain exactly the seven supported break types")
     if any(isinstance(weight, bool) or not isinstance(weight, (int, float)) or weight < 0
-           for weight in BREAK_MIX.values()):
+           for weight in break_mix.values()):
         raise ValueError("BREAK_MIX values must be non-negative numbers")
 
-    total = sum(BREAK_MIX.values())
+    total = sum(break_mix.values())
     if not 0.999999999 <= total <= 1.000000001:
         raise ValueError("BREAK_MIX proportions must sum to 1")
 
-    raw_counts = {name: n_groups * weight for name, weight in BREAK_MIX.items()}
+    raw_counts = {name: n_groups * weight for name, weight in break_mix.items()}
     counts = {name: int(value) for name, value in raw_counts.items()}
     remaining = n_groups - sum(counts.values())
-    order = {name: index for index, name in enumerate(BREAK_MIX)}
+    order = {name: index for index, name in enumerate(break_mix)}
     ranked = sorted(
-        BREAK_MIX,
+        break_mix,
         key=lambda name: (-(raw_counts[name] - counts[name]), order[name]),
     )
     for name in ranked[:remaining]:
         counts[name] += 1
 
-    return [name for name in BREAK_MIX for _ in range(counts[name])]
+    return [name for name in break_mix for _ in range(counts[name])]
 
 
 class Generator:
@@ -281,8 +295,13 @@ def write_csv(path: Path, fieldnames: tuple[str, ...], rows: list[dict[str, obje
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--groups", type=int, default=N_GROUPS)
+    parser.add_argument("--hard-multiplier", type=float, default=1.0)
+    args = parser.parse_args()
     generator = Generator(SEED)
-    break_types = allocate_break_types(N_GROUPS)
+    mix = scaled_break_mix(args.hard_multiplier)
+    break_types = allocate_break_types(args.groups, mix)
     generator.rng.shuffle(break_types)
     for group_number, break_type in enumerate(break_types, start=1):
         generator.generate_group(group_number, break_type)
