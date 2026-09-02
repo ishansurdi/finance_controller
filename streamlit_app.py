@@ -29,14 +29,17 @@ report = json.loads(report_path.read_text(encoding="utf-8"))
 before = report["deterministic_only"]
 after = report["with_agents"]
 ablation = report["ablation"]
+tier_two = report["tier_two_score"]
 
 st.subheader("Measured contribution")
 first, second, third, fourth = st.columns(4)
 first.metric("Deterministic match rate", f"{before['match_rate']:.1%}")
 second.metric("With agents", f"{after['match_rate']:.1%}",
               f"+{ablation['match_rate_delta']:.1%}")
-third.metric("Groups recovered", ablation["agent_groups_recovered"])
-fourth.metric("Tier 2 escalations", ablation["tier_two_escalations"])
+third.metric("Recovery accuracy", f"{tier_two['recovery_accuracy']:.1%}",
+             f"{tier_two['correct_recoveries']}/{tier_two['resolvable_residual_groups']} groups")
+fourth.metric("Safety escalations", tier_two["correct_safety_escalations"],
+              f"{tier_two['resolvable_escalations']} resolvable misses")
 st.caption(f"Backend provenance: `{report['agent_backend']}`")
 
 st.subheader("Risk and controls")

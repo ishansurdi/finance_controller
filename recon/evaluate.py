@@ -71,3 +71,40 @@ def ablation(deterministic: dict[str, object], augmented: dict[str, object]) -> 
         "exceptions_escalated_after_agents": augmented["confusion_matrix"]["exception_as_exception"],
         "tier_two_escalations": augmented.get("exceptions_per_tier", {}).get("2", 0),
     }
+
+
+def score_tier_two(deterministic: tuple[Decision, ...], augmented: tuple[Decision, ...],
+                   truth: tuple[MatchGroup, ...]) -> dict[str, int | float]:
+    """Score Tier-2 recovery and abstention against exact hidden group pairings."""
+    deterministic_keys = {_key(d.order_ids, d.txn_ids, d.utrs)
+                          for d in deterministic if d.state == "auto_matched"}
+    tier_two = {_key(d.order_ids, d.txn_ids, d.utrs): d for d in augmented if d.tier == 2}
+    residual_truth = [group for group in truth
+                      if _key(group.order_ids, group.txn_ids, group.utrs) not in deterministic_keys]
+    resolvable = [group for group in residual_truth if group.expected_outcome == "matched"]
+    truly_exceptional = [group for group in residual_truth if group.expected_outcome == "exception"]
+    attempted = [d for d in tier_two.values() if d.state == "auto_matched"]
+    correct_recoveries = sum(
+        tier_two.get(_key(g.order_ids, g.txn_ids, g.utrs)) is not None
+        and tier_two[_key(g.order_ids, g.txn_ids, g.utrs)].state == "auto_matched"
+        for g in resolvable
+    )
+    resolvable_escalations = sum(
+        tier_two.get(_key(g.order_ids, g.txn_ids, g.utrs)) is not None
+        and tier_two[_key(g.order_ids, g.txn_ids, g.utrs)].state == "exception"
+        for g in resolvable
+    )
+    correct_escalations = sum(
+        tier_two.get(_key(g.order_ids, g.txn_ids, g.utrs)) is not None
+        and tier_two[_key(g.order_ids, g.txn_ids, g.utrs)].state == "exception"
+        for g in truly_exceptional
+    )
+    return {
+        "resolvable_residual_groups": len(resolvable),
+        "recovery_attempts": len(attempted),
+        "correct_recoveries": correct_recoveries,
+        "recovery_accuracy": correct_recoveries / len(resolvable) if resolvable else 0.0,
+        "recovery_precision": correct_recoveries / len(attempted) if attempted else 0.0,
+        "resolvable_escalations": resolvable_escalations,
+        "correct_safety_escalations": correct_escalations,
+    }
