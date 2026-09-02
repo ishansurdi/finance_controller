@@ -1,7 +1,9 @@
 """Honest match-group evaluation against hidden ground truth."""
 
 from collections import Counter
-from .config import FALSE_AUTO_MATCH_COST_PAISE, HUMAN_REVIEW_COST_PAISE
+from dataclasses import replace
+from .config import (CONFIDENCE_AUTO_MATCH, FALSE_AUTO_MATCH_COST_PAISE,
+                     HUMAN_REVIEW_COST_PAISE)
 from .models import Decision, MatchGroup
 
 
@@ -108,4 +110,25 @@ def score_tier_two(deterministic: tuple[Decision, ...], augmented: tuple[Decisio
         "recovery_precision": correct_recoveries / len(attempted) if attempted else 0.0,
         "resolvable_escalations": resolvable_escalations,
         "correct_safety_escalations": correct_escalations,
+    }
+
+
+def cost_curve(decisions: tuple[Decision, ...], truth: tuple[MatchGroup, ...],
+               thresholds: tuple[float, ...] = (0.50, 0.70, 0.90, 0.95, 0.99)) -> dict[str, object]:
+    """Estimate business loss across gates; threshold selection is cost-led, not F1-led."""
+    points = []
+    for threshold in thresholds:
+        gated = tuple(replace(decision,
+                              state=("auto_matched" if not decision.reason_code
+                                     and decision.confidence >= threshold else "exception"))
+                      for decision in decisions)
+        result = evaluate(gated, truth, 1.0, 0, {})
+        points.append({"threshold": threshold, **result["estimated_error_cost_paise"]})
+    return {
+        "selected_threshold": CONFIDENCE_AUTO_MATCH,
+        "selection_basis": "minimum expected business cost; not maximum F1",
+        "false_auto_match_to_review_cost_ratio": (
+            FALSE_AUTO_MATCH_COST_PAISE // HUMAN_REVIEW_COST_PAISE
+        ),
+        "points": points,
     }

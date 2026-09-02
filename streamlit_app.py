@@ -53,6 +53,8 @@ st.info(
     f"false auto-match {rupees(costs['false_auto_match_cost_paise'])} expected loss. "
     "The decision gate therefore prefers a cheap review over silently corrupting books."
 )
+st.caption("Confidence gate selected from expected business cost, not F1.")
+st.line_chart(report["confidence_cost_curve"]["points"], x="threshold", y="total")
 
 st.subheader("Accuracy by break type")
 rows = [{"break_type": name, **values} for name, values in after["per_break_type"].items()]

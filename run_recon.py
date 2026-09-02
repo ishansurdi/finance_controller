@@ -8,7 +8,7 @@ from time import perf_counter
 from recon.audit import write_audit, write_exceptions
 from recon.agents import reconcile_residual
 from recon.engine import control_total, reconcile
-from recon.evaluate import ablation, evaluate, score_tier_two
+from recon.evaluate import ablation, cost_curve, evaluate, score_tier_two
 from recon.load import load_bank, load_gateway, load_ground_truth, load_ledger, structural_anomalies
 from recon.residual import conclusive_decisions, isolate_residual
 
@@ -55,6 +55,7 @@ def main() -> None:
     report = {"deterministic_only": deterministic_report, "with_agents": agent_report,
               "ablation": ablation(deterministic_report, agent_report),
               "tier_two_score": score_tier_two(deterministic, decisions, truth),
+              "confidence_cost_curve": cost_curve(decisions, truth),
               "agent_backend": backend.name,
               "agent_model": getattr(backend, "model", "none"),
               "agent_temperature": getattr(backend, "temperature", 0),
