@@ -1,63 +1,192 @@
 {
-  "match_rate": 1.0,
-  "exception_precision": 1.0,
-  "exception_recall": 1.0,
-  "confusion_matrix": {
-    "matched_as_matched": 83,
-    "matched_as_exception": 0,
-    "exception_as_matched": 0,
-    "exception_as_exception": 17
-  },
-  "per_break_type": {
-    "rounding": {
-      "correct": 8,
-      "total": 8,
-      "accuracy": 1.0
+  "deterministic_only": {
+    "match_rate": 0.8170731707317073,
+    "exception_precision": 1.0,
+    "exception_recall": 0.7777777777777778,
+    "confusion_matrix": {
+      "matched_as_matched": 67,
+      "matched_as_exception": 0,
+      "matched_as_missing": 15,
+      "exception_as_matched": 0,
+      "exception_as_exception": 14,
+      "exception_as_missing": 4
     },
-    "clean": {
-      "correct": 45,
-      "total": 45,
-      "accuracy": 1.0
+    "per_break_type": {
+      "same_amount_collision": {
+        "correct": 0,
+        "total": 5,
+        "accuracy": 0.0
+      },
+      "clean": {
+        "correct": 36,
+        "total": 36,
+        "accuracy": 1.0
+      },
+      "narration_recovery": {
+        "correct": 0,
+        "total": 10,
+        "accuracy": 0.0
+      },
+      "timing_lag": {
+        "correct": 10,
+        "total": 10,
+        "accuracy": 1.0
+      },
+      "partial": {
+        "correct": 8,
+        "total": 8,
+        "accuracy": 1.0
+      },
+      "orphan": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      },
+      "duplicate": {
+        "correct": 8,
+        "total": 8,
+        "accuracy": 1.0
+      },
+      "batched": {
+        "correct": 7,
+        "total": 7,
+        "accuracy": 1.0
+      },
+      "agent_disagreement": {
+        "correct": 0,
+        "total": 4,
+        "accuracy": 0.0
+      },
+      "rounding": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      }
     },
-    "duplicate": {
-      "correct": 10,
-      "total": 10,
-      "accuracy": 1.0
+    "throughput_records_per_second": 19447.21431040949,
+    "resolved_per_tier": {
+      "0": 36,
+      "1": 31
     },
-    "timing_lag": {
-      "correct": 12,
-      "total": 12,
-      "accuracy": 1.0
+    "exceptions_per_tier": {
+      "1": 62
     },
-    "batched": {
-      "correct": 8,
-      "total": 8,
-      "accuracy": 1.0
+    "control_totals": {
+      "matched_gateway_net_paise": 49697114,
+      "matched_bank_paise": 49697112,
+      "residual_paise": -2
     },
-    "partial": {
-      "correct": 10,
-      "total": 10,
-      "accuracy": 1.0
+    "estimated_error_cost_paise": {
+      "false_review_cost": 37500,
+      "false_auto_match_cost": 0,
+      "total": 37500
     },
-    "orphan": {
-      "correct": 7,
-      "total": 7,
-      "accuracy": 1.0
+    "error_costs": {
+      "false_positive": "good match sent to human review",
+      "false_negative": "bad item silently auto-closed; may corrupt books",
+      "human_review_cost_paise": 2500,
+      "false_auto_match_cost_paise": 1000000
     }
   },
-  "throughput_records_per_second": 14734.222103528085,
-  "resolved_per_tier": {
-    "0": 45,
-    "1": 38
+  "with_agents": {
+    "match_rate": 1.0,
+    "exception_precision": 1.0,
+    "exception_recall": 1.0,
+    "confusion_matrix": {
+      "matched_as_matched": 82,
+      "matched_as_exception": 0,
+      "matched_as_missing": 0,
+      "exception_as_matched": 0,
+      "exception_as_exception": 18,
+      "exception_as_missing": 0
+    },
+    "per_break_type": {
+      "same_amount_collision": {
+        "correct": 5,
+        "total": 5,
+        "accuracy": 1.0
+      },
+      "clean": {
+        "correct": 36,
+        "total": 36,
+        "accuracy": 1.0
+      },
+      "narration_recovery": {
+        "correct": 10,
+        "total": 10,
+        "accuracy": 1.0
+      },
+      "timing_lag": {
+        "correct": 10,
+        "total": 10,
+        "accuracy": 1.0
+      },
+      "partial": {
+        "correct": 8,
+        "total": 8,
+        "accuracy": 1.0
+      },
+      "orphan": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      },
+      "duplicate": {
+        "correct": 8,
+        "total": 8,
+        "accuracy": 1.0
+      },
+      "batched": {
+        "correct": 7,
+        "total": 7,
+        "accuracy": 1.0
+      },
+      "agent_disagreement": {
+        "correct": 4,
+        "total": 4,
+        "accuracy": 1.0
+      },
+      "rounding": {
+        "correct": 6,
+        "total": 6,
+        "accuracy": 1.0
+      }
+    },
+    "throughput_records_per_second": 19447.21431040949,
+    "resolved_per_tier": {
+      "0": 36,
+      "1": 31,
+      "2": 15
+    },
+    "exceptions_per_tier": {
+      "1": 14,
+      "2": 4
+    },
+    "control_totals": {
+      "matched_gateway_net_paise": 64689598,
+      "matched_bank_paise": 64691366,
+      "residual_paise": 1768
+    },
+    "estimated_error_cost_paise": {
+      "false_review_cost": 0,
+      "false_auto_match_cost": 0,
+      "total": 0
+    },
+    "error_costs": {
+      "false_positive": "good match sent to human review",
+      "false_negative": "bad item silently auto-closed; may corrupt books",
+      "human_review_cost_paise": 2500,
+      "false_auto_match_cost_paise": 1000000
+    }
   },
-  "control_totals": {
-    "matched_gateway_net_paise": 95822399,
-    "matched_bank_paise": 95822391,
-    "residual_paise": -8
+  "ablation": {
+    "match_rate_delta": 0.18292682926829273,
+    "agent_groups_recovered": 15,
+    "deterministic_auto_matched": 67,
+    "agent_augmented_auto_matched": 82,
+    "exceptions_escalated_after_agents": 18,
+    "tier_two_escalations": 4
   },
-  "error_costs": {
-    "false_positive": "good match sent to human review",
-    "false_negative": "bad item silently auto-closed; may corrupt books"
-  },
+  "agent_backend": "offline_evidence_backend",
   "structural_anomalies": []
 }
