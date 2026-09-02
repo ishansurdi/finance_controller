@@ -2,7 +2,6 @@
 
 import argparse
 import json
-from datetime import datetime, timezone
 from pathlib import Path
 from time import perf_counter
 
@@ -61,7 +60,7 @@ def main() -> None:
               "agent_temperature": getattr(backend, "temperature", 0),
               "structural_anomalies": list(anomalies)}
     out.mkdir(exist_ok=True)
-    run_at = datetime.now(timezone.utc).isoformat()
+    run_at = max(row.captured_at for row in gateway).isoformat()
     (out / "report.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     write_exceptions(out / "exceptions.csv", decisions)
     write_audit(out / "audit_trail.csv", decisions, run_at)
@@ -77,7 +76,8 @@ def main() -> None:
     print(f"Correct safety escalations{tier_two['correct_safety_escalations']:>9}")
     print(f"Resolvable misses       {tier_two['resolvable_escalations']:>12}")
     print(f"Total honest exceptions{report['ablation']['exceptions_escalated_after_agents']:>12}")
-    print(f"Throughput              {agent_report['throughput_records_per_second']:>12,.0f} records/sec")
+    throughput = record_count / elapsed if elapsed else 0.0
+    print(f"Throughput              {throughput:>12,.0f} records/sec (observed, not persisted)")
     print(f"Control residual        {agent_report['control_totals']['residual_paise']:>+12,} paise")
     print("\nPER-BREAK ACCURACY")
     for name, values in agent_report["per_break_type"].items():
