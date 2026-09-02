@@ -99,6 +99,7 @@ class Generator:
         self.order_number = 0
         self.txn_number = 0
         self.utr_number = 0
+        self.narration_recovery_number = 0
         self.base_time = datetime(2026, 1, 5, 9, 0, tzinfo=timezone.utc)
 
     def next_id(self, kind: str) -> str:
@@ -221,8 +222,12 @@ class Generator:
         orders, txns = [order], [txn]
 
         if break_type == "narration_recovery":
+            self.narration_recovery_number += 1
             adjustment = self.rng.randint(25, 250)
-            narration = f"PG NET {txn}; ORDER {order}; ADJ {adjustment}P"
+            if self.narration_recovery_number <= 3:
+                narration = f"PG NET {txn}; ADJ {adjustment}P; ORDER REFERENCE MISSING"
+            else:
+                narration = f"PG NET {txn}; ORDER {order}; ADJ {adjustment}P"
             utrs = [self.add_bank_credit(net + adjustment, captured + timedelta(days=2), narration)]
             notes = "Amount has a documented adjustment beyond deterministic tolerance; narration identifies it."
             outcome, reason = "matched", ""

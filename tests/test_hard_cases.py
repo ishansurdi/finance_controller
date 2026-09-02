@@ -28,6 +28,15 @@ class HardCaseTests(unittest.TestCase):
 
         self.assertEqual(row.bank_narration, "PG REF T1")
 
+    def test_three_recoveries_lack_corroborating_order_reference(self):
+        generator = generate_data.Generator(generate_data.SEED)
+        for number in range(1, 11):
+            generator.generate_group(number, "narration_recovery")
+
+        missing = [row for row in generator.bank if "REFERENCE MISSING" in row["bank_narration"]]
+
+        self.assertEqual(len(missing), 3)
+
 
 if __name__ == "__main__":
     unittest.main()
