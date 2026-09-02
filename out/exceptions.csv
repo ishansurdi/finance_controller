@@ -1,0 +1,18 @@
+reason_code,explanation,order_ids,txn_ids,utrs,confidence
+duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,ORD00003,TXN00003|TXN00004,UTR00003,0.0
+duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,ORD00019,TXN00020|TXN00021,UTR00016,0.0
+duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,ORD00020,TXN00022|TXN00023,UTR00017,0.0
+duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,ORD00055,TXN00058|TXN00059,UTR00046,0.0
+duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,ORD00060,TXN00064|TXN00065,UTR00053,0.0
+duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,ORD00077,TXN00082|TXN00083,UTR00070,0.0
+duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,ORD00081,TXN00087|TXN00088,UTR00074,0.0
+duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,ORD00085,TXN00092|TXN00093,UTR00079,0.0
+duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,ORD00109,TXN00117|TXN00118,UTR00098,0.0
+duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,ORD00116,TXN00125|TXN00126,UTR00109,0.0
+bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,UTR00030,0.0
+bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,UTR00032,0.0
+bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,UTR00058,0.0
+bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,UTR00065,0.0
+bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,UTR00075,0.0
+bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,UTR00099,0.0
+bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,UTR00108,0.0

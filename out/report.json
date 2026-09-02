@@ -1,0 +1,63 @@
+{
+  "match_rate": 1.0,
+  "exception_precision": 1.0,
+  "exception_recall": 1.0,
+  "confusion_matrix": {
+    "matched_as_matched": 83,
+    "matched_as_exception": 0,
+    "exception_as_matched": 0,
+    "exception_as_exception": 17
+  },
+  "per_break_type": {
+    "rounding": {
+      "correct": 8,
+      "total": 8,
+      "accuracy": 1.0
+    },
+    "clean": {
+      "correct": 45,
+      "total": 45,
+      "accuracy": 1.0
+    },
+    "duplicate": {
+      "correct": 10,
+      "total": 10,
+      "accuracy": 1.0
+    },
+    "timing_lag": {
+      "correct": 12,
+      "total": 12,
+      "accuracy": 1.0
+    },
+    "batched": {
+      "correct": 8,
+      "total": 8,
+      "accuracy": 1.0
+    },
+    "partial": {
+      "correct": 10,
+      "total": 10,
+      "accuracy": 1.0
+    },
+    "orphan": {
+      "correct": 7,
+      "total": 7,
+      "accuracy": 1.0
+    }
+  },
+  "throughput_records_per_second": 14734.222103528085,
+  "resolved_per_tier": {
+    "0": 45,
+    "1": 38
+  },
+  "control_totals": {
+    "matched_gateway_net_paise": 95822399,
+    "matched_bank_paise": 95822391,
+    "residual_paise": -8
+  },
+  "error_costs": {
+    "false_positive": "good match sent to human review",
+    "false_negative": "bad item silently auto-closed; may corrupt books"
+  },
+  "structural_anomalies": []
+}
