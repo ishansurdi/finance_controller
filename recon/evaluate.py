@@ -1,6 +1,7 @@
 """Honest match-group evaluation against hidden ground truth."""
 
 from collections import Counter
+from .config import FALSE_AUTO_MATCH_COST_PAISE, HUMAN_REVIEW_COST_PAISE
 from .models import Decision, MatchGroup
 
 
@@ -36,11 +37,34 @@ def evaluate(decisions: tuple[Decision, ...], truth: tuple[MatchGroup, ...],
     for bucket in per_break.values():
         bucket["accuracy"] = bucket["correct"] / bucket["total"]
     tiers = Counter(str(d.tier) for d in decisions if d.state == "auto_matched")
+    false_reviews = confusion["matched_as_exception"] + confusion["matched_as_missing"]
+    false_auto_matches = confusion["exception_as_matched"]
     return {"match_rate": correct_matches / true_matches if true_matches else 0.0,
             "exception_precision": caught / flagged if flagged else 0.0,
             "exception_recall": caught / true_exceptions if true_exceptions else 0.0,
             "confusion_matrix": confusion, "per_break_type": per_break,
             "throughput_records_per_second": total_records / elapsed_seconds if elapsed_seconds else 0.0,
             "resolved_per_tier": dict(tiers), "control_totals": control_totals,
+            "estimated_error_cost_paise": {
+                "false_review_cost": false_reviews * HUMAN_REVIEW_COST_PAISE,
+                "false_auto_match_cost": false_auto_matches * FALSE_AUTO_MATCH_COST_PAISE,
+                "total": (false_reviews * HUMAN_REVIEW_COST_PAISE
+                          + false_auto_matches * FALSE_AUTO_MATCH_COST_PAISE),
+            },
             "error_costs": {"false_positive": "good match sent to human review",
-                            "false_negative": "bad item silently auto-closed; may corrupt books"}}
+                            "false_negative": "bad item silently auto-closed; may corrupt books",
+                            "human_review_cost_paise": HUMAN_REVIEW_COST_PAISE,
+                            "false_auto_match_cost_paise": FALSE_AUTO_MATCH_COST_PAISE}}
+
+
+def ablation(deterministic: dict[str, object], augmented: dict[str, object]) -> dict[str, object]:
+    """Quantify the incremental contribution of the verified agent layer."""
+    deterministic_tiers = deterministic["resolved_per_tier"]
+    augmented_tiers = augmented["resolved_per_tier"]
+    return {
+        "match_rate_delta": augmented["match_rate"] - deterministic["match_rate"],
+        "agent_groups_recovered": augmented_tiers.get("2", 0),
+        "deterministic_auto_matched": sum(deterministic_tiers.values()),
+        "agent_augmented_auto_matched": sum(augmented_tiers.values()),
+        "exceptions_escalated_after_agents": augmented["confusion_matrix"]["exception_as_exception"],
+    }

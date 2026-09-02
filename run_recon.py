@@ -6,9 +6,11 @@ from pathlib import Path
 from time import perf_counter
 
 from recon.audit import write_audit, write_exceptions
+from recon.agents import reconcile_residual
 from recon.engine import control_total, reconcile
-from recon.evaluate import evaluate
+from recon.evaluate import ablation, evaluate
 from recon.load import load_bank, load_gateway, load_ground_truth, load_ledger, structural_anomalies
+from recon.residual import conclusive_decisions, isolate_residual
 
 
 def main() -> None:
@@ -20,25 +22,37 @@ def main() -> None:
     truth = load_ground_truth(data / "ground_truth.csv")
     anomalies = structural_anomalies(ledger, gateway)
     started = perf_counter()
-    decisions = reconcile(ledger, gateway, bank)
+    deterministic = reconcile(ledger, gateway, bank)
+    residual = isolate_residual(ledger, gateway, bank, deterministic)
+    agent_decisions = reconcile_residual(residual)
+    retained = conclusive_decisions(bank, deterministic)
+    decisions = retained + agent_decisions
     elapsed = perf_counter() - started
-    report = evaluate(decisions, truth, elapsed, len(ledger) + len(gateway) + len(bank),
-                      control_total(decisions, gateway, bank))
-    report["structural_anomalies"] = list(anomalies)
+    record_count = len(ledger) + len(gateway) + len(bank)
+    deterministic_report = evaluate(deterministic, truth, elapsed, record_count,
+                                    control_total(deterministic, gateway, bank))
+    agent_report = evaluate(decisions, truth, elapsed, record_count,
+                            control_total(decisions, gateway, bank))
+    report = {"deterministic_only": deterministic_report, "with_agents": agent_report,
+              "ablation": ablation(deterministic_report, agent_report),
+              "structural_anomalies": list(anomalies)}
     out.mkdir(exist_ok=True)
     run_at = datetime.now(timezone.utc).isoformat()
     (out / "report.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     write_exceptions(out / "exceptions.csv", decisions)
     write_audit(out / "audit_trail.csv", decisions, run_at)
 
-    print("AI FINANCE CONTROLLER — DETERMINISTIC SCORECARD")
-    print(f"Match rate              {report['match_rate']:.1%}")
-    print(f"Exception precision     {report['exception_precision']:.1%}")
-    print(f"Exception recall        {report['exception_recall']:.1%}")
-    print(f"Throughput              {report['throughput_records_per_second']:,.0f} records/sec")
-    print(f"Control residual        {report['control_totals']['residual_paise']:+,} paise")
+    print("AI FINANCE CONTROLLER - ABLATION SCORECARD")
+    print("                         DETERMINISTIC   + AGENTS")
+    print(f"Match rate              {deterministic_report['match_rate']:>12.1%}   {agent_report['match_rate']:>8.1%}")
+    print(f"Exception precision     {deterministic_report['exception_precision']:>12.1%}   {agent_report['exception_precision']:>8.1%}")
+    print(f"Exception recall        {deterministic_report['exception_recall']:>12.1%}   {agent_report['exception_recall']:>8.1%}")
+    print(f"Agent groups recovered  {report['ablation']['agent_groups_recovered']:>12}")
+    print(f"Escalated after agents  {report['ablation']['exceptions_escalated_after_agents']:>12}")
+    print(f"Throughput              {agent_report['throughput_records_per_second']:>12,.0f} records/sec")
+    print(f"Control residual        {agent_report['control_totals']['residual_paise']:>+12,} paise")
     print("\nPER-BREAK ACCURACY")
-    for name, values in report["per_break_type"].items():
+    for name, values in agent_report["per_break_type"].items():
         print(f"  {name:<20} {values['correct']:>3}/{values['total']:<3} {values['accuracy']:>7.1%}")
     exceptions = [d for d in decisions if d.state == "exception"]
     print(f"\nEXCEPTIONS ({len(exceptions)})")
@@ -51,4 +65,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

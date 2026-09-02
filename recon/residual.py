@@ -17,15 +17,21 @@ def tier_two_decisions(residual: Residual) -> tuple[Decision, ...]:
     return ()
 
 
+def conclusive_decisions(bank: tuple[BankRow, ...],
+                         decisions: tuple[Decision, ...]) -> tuple[Decision, ...]:
+    """Keep deterministic outcomes that require no Tier-2 evidence review."""
+    bank_by_utr = {row.utr: row for row in bank}
+    return tuple(decision for decision in decisions
+                 if decision.state == "auto_matched"
+                 or decision.reason_code == "duplicate_capture_human_void_required"
+                 or (decision.reason_code == "bank_credit_with_no_matching_order"
+                     and all(not bank_by_utr[utr].bank_narration for utr in decision.utrs)))
+
+
 def isolate_residual(ledger: tuple[LedgerRow, ...], gateway: tuple[GatewayRow, ...],
                      bank: tuple[BankRow, ...], decisions: tuple[Decision, ...]) -> Residual:
     """Return records not conclusively closed by deterministic tiers."""
-    final = tuple(decision for decision in decisions
-                  if decision.state == "auto_matched"
-                  or decision.reason_code in {
-                      "duplicate_capture_human_void_required",
-                      "bank_credit_with_no_matching_order",
-                  })
+    final = conclusive_decisions(bank, decisions)
     used_orders = {value for decision in final for value in decision.order_ids}
     used_txns = {value for decision in final for value in decision.txn_ids}
     used_utrs = {value for decision in final for value in decision.utrs}
