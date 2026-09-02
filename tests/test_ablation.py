@@ -6,14 +6,15 @@ from recon.evaluate import ablation
 class AblationTests(unittest.TestCase):
     def test_reports_agent_increment(self):
         before = {"match_rate": 0.8, "resolved_per_tier": {"0": 40, "1": 40},
-                  "confusion_matrix": {"exception_as_exception": 5}}
+                  "confusion_matrix": {"exception_as_exception": 5}, "exceptions_per_tier": {"1": 5}}
         after = {"match_rate": 0.9, "resolved_per_tier": {"0": 40, "1": 40, "2": 10},
-                 "confusion_matrix": {"exception_as_exception": 5}}
+                 "confusion_matrix": {"exception_as_exception": 5}, "exceptions_per_tier": {"1": 3, "2": 2}}
 
         result = ablation(before, after)
 
         self.assertAlmostEqual(result["match_rate_delta"], 0.1)
         self.assertEqual(result["agent_groups_recovered"], 10)
+        self.assertEqual(result["tier_two_escalations"], 2)
 
 
 if __name__ == "__main__":

@@ -36,7 +36,7 @@ first.metric("Deterministic match rate", f"{before['match_rate']:.1%}")
 second.metric("With agents", f"{after['match_rate']:.1%}",
               f"+{ablation['match_rate_delta']:.1%}")
 third.metric("Groups recovered", ablation["agent_groups_recovered"])
-fourth.metric("Escalated safely", ablation["exceptions_escalated_after_agents"])
+fourth.metric("Tier 2 escalations", ablation["tier_two_escalations"])
 st.caption(f"Backend provenance: `{report['agent_backend']}`")
 
 st.subheader("Risk and controls")

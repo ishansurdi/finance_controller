@@ -37,6 +37,7 @@ def evaluate(decisions: tuple[Decision, ...], truth: tuple[MatchGroup, ...],
     for bucket in per_break.values():
         bucket["accuracy"] = bucket["correct"] / bucket["total"]
     tiers = Counter(str(d.tier) for d in decisions if d.state == "auto_matched")
+    exception_tiers = Counter(str(d.tier) for d in decisions if d.state == "exception")
     false_reviews = confusion["matched_as_exception"] + confusion["matched_as_missing"]
     false_auto_matches = confusion["exception_as_matched"]
     return {"match_rate": correct_matches / true_matches if true_matches else 0.0,
@@ -44,7 +45,8 @@ def evaluate(decisions: tuple[Decision, ...], truth: tuple[MatchGroup, ...],
             "exception_recall": caught / true_exceptions if true_exceptions else 0.0,
             "confusion_matrix": confusion, "per_break_type": per_break,
             "throughput_records_per_second": total_records / elapsed_seconds if elapsed_seconds else 0.0,
-            "resolved_per_tier": dict(tiers), "control_totals": control_totals,
+            "resolved_per_tier": dict(tiers), "exceptions_per_tier": dict(exception_tiers),
+            "control_totals": control_totals,
             "estimated_error_cost_paise": {
                 "false_review_cost": false_reviews * HUMAN_REVIEW_COST_PAISE,
                 "false_auto_match_cost": false_auto_matches * FALSE_AUTO_MATCH_COST_PAISE,
@@ -67,4 +69,5 @@ def ablation(deterministic: dict[str, object], augmented: dict[str, object]) -> 
         "deterministic_auto_matched": sum(deterministic_tiers.values()),
         "agent_augmented_auto_matched": sum(augmented_tiers.values()),
         "exceptions_escalated_after_agents": augmented["confusion_matrix"]["exception_as_exception"],
+        "tier_two_escalations": augmented.get("exceptions_per_tier", {}).get("2", 0),
     }
