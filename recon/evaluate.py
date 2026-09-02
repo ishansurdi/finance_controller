@@ -11,13 +11,17 @@ def _key(order_ids: tuple[str, ...], txn_ids: tuple[str, ...], utrs: tuple[str, 
 def evaluate(decisions: tuple[Decision, ...], truth: tuple[MatchGroup, ...],
              elapsed_seconds: float, total_records: int, control_totals: dict[str, int]) -> dict[str, object]:
     predicted = {_key(d.order_ids, d.txn_ids, d.utrs): d for d in decisions}
-    confusion = {"matched_as_matched": 0, "matched_as_exception": 0,
-                 "exception_as_matched": 0, "exception_as_exception": 0}
+    confusion = {"matched_as_matched": 0, "matched_as_exception": 0, "matched_as_missing": 0,
+                 "exception_as_matched": 0, "exception_as_exception": 0,
+                 "exception_as_missing": 0}
     per_break: dict[str, dict[str, int | float]] = {}
     correct_matches = true_matches = flagged = true_exceptions = caught = 0
     for group in truth:
         decision = predicted.get(_key(group.order_ids, group.txn_ids, group.utrs))
-        predicted_state = "matched" if decision and decision.state == "auto_matched" else "exception"
+        if decision is None:
+            predicted_state = "missing"
+        else:
+            predicted_state = "matched" if decision.state == "auto_matched" else "exception"
         expected = group.expected_outcome
         confusion[f"{expected}_as_{predicted_state}"] += 1
         correct = predicted_state == expected and decision is not None
@@ -28,7 +32,7 @@ def evaluate(decisions: tuple[Decision, ...], truth: tuple[MatchGroup, ...],
         correct_matches += expected == "matched" and predicted_state == "matched" and decision is not None
         true_exceptions += expected == "exception"
         flagged += predicted_state == "exception"
-        caught += expected == "exception" and predicted_state == "exception"
+        caught += expected == "exception" and predicted_state == "exception" and decision is not None
     for bucket in per_break.values():
         bucket["accuracy"] = bucket["correct"] / bucket["total"]
     tiers = Counter(str(d.tier) for d in decisions if d.state == "auto_matched")
