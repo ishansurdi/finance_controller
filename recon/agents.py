@@ -1,8 +1,10 @@
 """Evidence proposer and independent maker-checker verifier for Tier 2."""
 
 import re
+import json
 from dataclasses import dataclass
 from itertools import groupby
+from pathlib import Path
 from typing import Protocol
 
 from .models import BankRow, Decision, GatewayRow
@@ -24,6 +26,30 @@ class EvidenceBackend:
 
     def extract_ids(self, narration: str) -> tuple[str, ...]:
         return tuple(dict.fromkeys(ID_PATTERN.findall(narration.upper())))
+
+
+class AbstainBackend:
+    """Network-failure fallback: create no proposals and escalate the residual."""
+
+    name = "abstain_all_fallback"
+
+    def extract_ids(self, narration: str) -> tuple[str, ...]:
+        return ()
+
+
+class ReplayBackend:
+    """Replay checked-in, previously reviewed extraction responses offline."""
+
+    name = "recorded_replay"
+
+    def __init__(self, path: Path) -> None:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        self.model = payload["model"]
+        self.temperature = payload["temperature"]
+        self.responses = payload["responses"]
+
+    def extract_ids(self, narration: str) -> tuple[str, ...]:
+        return tuple(self.responses.get(narration, ()))
 
 
 @dataclass(frozen=True)

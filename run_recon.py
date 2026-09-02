@@ -16,7 +16,8 @@ from recon.residual import conclusive_decisions, isolate_residual
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--agent-backend", choices=("offline", "openai"), default="offline")
+    parser.add_argument("--agent-backend", choices=("replay", "offline", "openai", "abstain"),
+                        default="replay")
     args = parser.parse_args()
     if args.agent_backend == "openai":
         from recon.openai_backend import OpenAIBackend
@@ -24,6 +25,12 @@ def main() -> None:
             backend = OpenAIBackend()
         except ValueError as error:
             parser.error(str(error))
+    elif args.agent_backend == "replay":
+        from recon.agents import ReplayBackend
+        backend = ReplayBackend(Path(__file__).resolve().parent / "replay" / "agent_responses.json")
+    elif args.agent_backend == "abstain":
+        from recon.agents import AbstainBackend
+        backend = AbstainBackend()
     else:
         from recon.agents import EvidenceBackend
         backend = EvidenceBackend()
@@ -50,6 +57,8 @@ def main() -> None:
               "ablation": ablation(deterministic_report, agent_report),
               "tier_two_score": score_tier_two(deterministic, decisions, truth),
               "agent_backend": backend.name,
+              "agent_model": getattr(backend, "model", "none"),
+              "agent_temperature": getattr(backend, "temperature", 0),
               "structural_anomalies": list(anomalies)}
     out.mkdir(exist_ok=True)
     run_at = datetime.now(timezone.utc).isoformat()
