@@ -58,3 +58,5 @@ class Decision:
     tolerance_used: str
     reason_code: str = ""
     review_recommended: bool = False
+    proposer_output: str = ""
+    verifier_output: str = ""

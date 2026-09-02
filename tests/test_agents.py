@@ -28,6 +28,8 @@ class AgentTests(unittest.TestCase):
         self.assertEqual(result[0].state, "exception")
         self.assertEqual(result[0].reason_code, "proposer_verifier_disagreement")
         self.assertIn("Verifier rejected", result[0].rationale)
+        self.assertIn("linked narration", result[0].proposer_output)
+        self.assertIn("Rejected", result[0].verifier_output)
 
 
 if __name__ == "__main__":

@@ -91,11 +91,15 @@ def verify(proposal: Proposal) -> Decision:
             "agent_verifier_disagreement", 0.35,
             f"{proposal.rationale} Verifier rejected conflicting references: "
             f"expected {txn.txn_id}/{txn.order_id}.", f"drift={drift}paise",
-            "proposer_verifier_disagreement", True)
+            "proposer_verifier_disagreement", True,
+            proposal.rationale,
+            f"Rejected: expected corroborating references {txn.txn_id} and {txn.order_id}.")
     return Decision((txn.order_id,), (txn.txn_id,), (bank.utr,), "auto_matched", 2,
         "narration_evidence", 0.96,
         f"{proposal.rationale} Verifier confirmed both transaction and order references; "
-        f"documented adjustment is {drift:+d} paise.", f"drift={drift}paise")
+        f"documented adjustment is {drift:+d} paise.", f"drift={drift}paise", "", False,
+        proposal.rationale,
+        f"Confirmed both references; accepted documented drift {drift:+d} paise.")
 
 
 def _merge_collisions(decisions: list[Decision], residual: Residual) -> list[Decision]:
@@ -122,7 +126,9 @@ def _merge_collisions(decisions: list[Decision], residual: Residual) -> list[Dec
             tuple(value for item in group for value in item.utrs),
             "auto_matched", 2, "narration_collision_resolution", 0.96,
             "Proposer separated equal-amount candidates using narration; verifier confirmed every pair.",
-            f"members={len(group)}; drift=0paise",
+            f"members={len(group)}; drift=0paise", "", False,
+            " | ".join(item.proposer_output for item in group),
+            "Confirmed each narrated pair is unique within the equal-amount collision.",
         ))
     return merged
 
