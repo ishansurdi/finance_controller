@@ -1,91 +1,22 @@
 reason_code,explanation,proposer_output,verifier_output,order_ids,txn_ids,utrs,confidence
-duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00075,TXN00075|TXN00076,UTR00061,0.0
-duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00085,TXN00086|TXN00087,UTR00072,0.0
-duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00086,TXN00088|TXN00089,UTR00073,0.0
-duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00106,TXN00109|TXN00110,UTR00096,0.0
-duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00108,TXN00112|TXN00113,UTR00098,0.0
-duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00111,TXN00116|TXN00117,UTR00100,0.0
-duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00113,TXN00119|TXN00120,UTR00102,0.0
-duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00135,TXN00142|TXN00143,UTR00124,0.0
-duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00150,TXN00158|TXN00159,UTR00142,0.0
-duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00152,TXN00161|TXN00162,UTR00144,0.0
-duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00154,TXN00164|TXN00165,UTR00147,0.0
-duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00172,TXN00183|TXN00184,UTR00168,0.0
-bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,,,UTR00005,0.0
-bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,,,UTR00069,0.0
-bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,,,UTR00074,0.0
-bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,,,UTR00127,0.0
-bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,,,UTR00153,0.0
-bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,,,UTR00156,0.0
-bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,,,UTR00157,0.0
-bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,,,UTR00158,0.0
-bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,,,UTR00159,0.0
-proposer_verifier_disagreement,"Proposer linked narration identifiers TXN99999, ORD00033 to TXN00033. Verifier rejected conflicting references: expected TXN00033/ORD00033.","Proposer linked narration identifiers TXN99999, ORD00033 to TXN00033.",Rejected: expected corroborating references TXN00033 and ORD00033.,ORD00033,TXN00033,UTR00028,0.35
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00008,TXN00008,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00012,TXN00012,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00013,TXN00013,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00018,TXN00018,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00024,TXN00024,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00030,TXN00030,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00031,TXN00031,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00042,TXN00042,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00050,TXN00050,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00051,TXN00051,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00052,TXN00052,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00056,TXN00056,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00062,TXN00062,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00074,TXN00074,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00084,TXN00085,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00087,TXN00090,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00088,TXN00091,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00091,TXN00094,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00092,TXN00095,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00093,TXN00096,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00096,TXN00099,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00102,TXN00105,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00117,TXN00124,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00119,TXN00126,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00121,TXN00128,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00123,TXN00130,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00128,TXN00135,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00130,TXN00137,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00131,TXN00138,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00140,TXN00148,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00155,TXN00166,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00167,TXN00178,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00168,TXN00179,,0.0
-agent_abstained,No narration evidence produced a verifiable unique link.,,,ORD00170,TXN00181,,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00004,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00009,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00010,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00015,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00022,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00024,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00025,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00037,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00042,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00043,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00044,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00049,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00052,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00060,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00071,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00075,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00076,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00080,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00081,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00082,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00085,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00093,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00106,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00108,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00110,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00112,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00116,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00118,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00119,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00130,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00148,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00163,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00164,0.0
-agent_abstained,No transaction could be verified from bank narration.,,,,,UTR00166,0.0
+duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00018,TXN00018|TXN00019,UTR00022,0.0
+duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00020,TXN00021|TXN00022,UTR00024,0.0
+duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00036,TXN00038|TXN00039,UTR00038,0.0
+duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00052,TXN00055|TXN00056,UTR00047,0.0
+duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00059,TXN00063|TXN00064,UTR00056,0.0
+duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00067,TXN00072|TXN00073,UTR00064,0.0
+duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00092,TXN00098|TXN00099,UTR00087,0.0
+duplicate_capture_human_void_required,Multiple gateway captures share one order; a human must identify the retry to void.,,,ORD00106,TXN00113|TXN00114,UTR00105,0.0
+bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,,,UTR00019,0.0
+bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,,,UTR00020,0.0
+bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,,,UTR00055,0.0
+bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,,,UTR00077,0.0
+bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,,,UTR00102,0.0
+bank_credit_with_no_matching_order,Bank credit has no reconcilable ledger or gateway transaction.,,,,,UTR00112,0.0
+proposer_verifier_disagreement,Proposer linked narration identifiers TXN00006 to TXN00006. Verifier rejected conflicting references: expected TXN00006/ORD00006.,Proposer linked narration identifiers TXN00006 to TXN00006.,Rejected: expected corroborating references TXN00006 and ORD00006.,ORD00006,TXN00006,UTR00006,0.35
+proposer_verifier_disagreement,Proposer linked narration identifiers TXN00030 to TXN00030. Verifier rejected conflicting references: expected TXN00030/ORD00028.,Proposer linked narration identifiers TXN00030 to TXN00030.,Rejected: expected corroborating references TXN00030 and ORD00028.,ORD00028,TXN00030,UTR00030,0.35
+proposer_verifier_disagreement,"Proposer linked narration identifiers TXN99999, ORD00033 to TXN00035. Verifier rejected conflicting references: expected TXN00035/ORD00033.","Proposer linked narration identifiers TXN99999, ORD00033 to TXN00035.",Rejected: expected corroborating references TXN00035 and ORD00033.,ORD00033,TXN00035,UTR00035,0.35
+proposer_verifier_disagreement,"Proposer linked narration identifiers TXN99999, ORD00031 to TXN00033. Verifier rejected conflicting references: expected TXN00033/ORD00031.","Proposer linked narration identifiers TXN99999, ORD00031 to TXN00033.",Rejected: expected corroborating references TXN00033 and ORD00031.,ORD00031,TXN00033,UTR00033,0.35
+proposer_verifier_disagreement,Proposer linked narration identifiers TXN00004 to TXN00004. Verifier rejected conflicting references: expected TXN00004/ORD00004.,Proposer linked narration identifiers TXN00004 to TXN00004.,Rejected: expected corroborating references TXN00004 and ORD00004.,ORD00004,TXN00004,UTR00004,0.35
+proposer_verifier_disagreement,"Proposer linked narration identifiers TXN99999, ORD00104 to TXN00111. Verifier rejected conflicting references: expected TXN00111/ORD00104.","Proposer linked narration identifiers TXN99999, ORD00104 to TXN00111.",Rejected: expected corroborating references TXN00111 and ORD00104.,ORD00104,TXN00111,UTR00103,0.35
+proposer_verifier_disagreement,"Proposer linked narration identifiers TXN99999, ORD00070 to TXN00076. Verifier rejected conflicting references: expected TXN00076/ORD00070.","Proposer linked narration identifiers TXN99999, ORD00070 to TXN00076.",Rejected: expected corroborating references TXN00076 and ORD00070.,ORD00070,TXN00076,UTR00067,0.35
