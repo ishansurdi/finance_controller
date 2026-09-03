@@ -79,6 +79,10 @@ third.metric("Recovery accuracy", f"{tier_two['recovery_accuracy']:.1%}",
 fourth.metric("Safety escalations", tier_two["correct_safety_escalations"],
               f"{tier_two['resolvable_escalations']} resolvable misses")
 st.caption(f"Backend provenance: `{report['agent_backend']}`")
+st.caption(
+    "Recovery impact",
+    help="How Tier 2 changed review workload, match coverage, and expected operating cost.",
+)
 if ablation["false_auto_matches_added"] == 0:
     st.success(
         f"The precision decline comes from {tier_two['resolvable_escalations']} good groups sent "
@@ -105,13 +109,30 @@ with st.expander("Explain the control variance"):
     )
     st.dataframe(controls["variance_breakdown"], hide_index=True, use_container_width=True)
 costs = after["error_costs"]
+st.caption(
+    "Decision cost basis",
+    help="The assumed cost of manual review compared with the expected loss from a false auto-match.",
+)
 st.info(
     f"Cost basis: human review {rupees(costs['human_review_cost_paise'])} per case; "
     f"false auto-match {rupees(costs['false_auto_match_cost_paise'])} expected loss. "
     "The decision gate therefore prefers a cheap review over silently corrupting books."
 )
-st.caption("Confidence gate selected from expected business cost, not F1.")
-st.line_chart(report["confidence_cost_curve"]["points"], x="threshold", y="total")
+st.markdown(
+    "**Confidence-cost curve**",
+    help="Compares the expected business cost produced by each candidate confidence threshold.",
+)
+st.caption(
+    "Each point shows estimated error cost at a confidence threshold. Lower is better; "
+    "the selected gate balances review effort against false-match risk."
+)
+st.line_chart(
+    report["confidence_cost_curve"]["points"],
+    x="threshold",
+    y="total",
+    x_label="Confidence threshold",
+    y_label="Expected cost (paise)",
+)
 
 st.subheader("Accuracy by break type")
 rows = [{"break_type": name, **values} for name, values in after["per_break_type"].items()]
