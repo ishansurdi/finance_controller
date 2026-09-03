@@ -75,12 +75,105 @@
     "control_totals": {
       "matched_gateway_net_paise": 49697114,
       "matched_bank_paise": 49697112,
-      "residual_paise": -2
+      "raw_residual_paise": -2,
+      "explained_variance_paise": -2,
+      "unexplained_residual_paise": 0,
+      "residual_paise": 0,
+      "variance_breakdown": [
+        {
+          "order_ids": [
+            "ORD00039"
+          ],
+          "txn_ids": [
+            "TXN00042"
+          ],
+          "utrs": [
+            "UTR00041"
+          ],
+          "rule_name": "rounding_tolerance",
+          "variance_paise": -1,
+          "classification": "explained"
+        },
+        {
+          "order_ids": [
+            "ORD00056"
+          ],
+          "txn_ids": [
+            "TXN00060"
+          ],
+          "utrs": [
+            "UTR00052"
+          ],
+          "rule_name": "rounding_tolerance",
+          "variance_paise": 1,
+          "classification": "explained"
+        },
+        {
+          "order_ids": [
+            "ORD00058"
+          ],
+          "txn_ids": [
+            "TXN00062"
+          ],
+          "utrs": [
+            "UTR00054"
+          ],
+          "rule_name": "rounding_tolerance",
+          "variance_paise": -1,
+          "classification": "explained"
+        },
+        {
+          "order_ids": [
+            "ORD00094"
+          ],
+          "txn_ids": [
+            "TXN00101"
+          ],
+          "utrs": [
+            "UTR00089"
+          ],
+          "rule_name": "rounding_tolerance",
+          "variance_paise": 2,
+          "classification": "explained"
+        },
+        {
+          "order_ids": [
+            "ORD00097"
+          ],
+          "txn_ids": [
+            "TXN00104"
+          ],
+          "utrs": [
+            "UTR00092"
+          ],
+          "rule_name": "rounding_tolerance",
+          "variance_paise": -1,
+          "classification": "explained"
+        },
+        {
+          "order_ids": [
+            "ORD00108"
+          ],
+          "txn_ids": [
+            "TXN00116"
+          ],
+          "utrs": [
+            "UTR00107"
+          ],
+          "rule_name": "rounding_tolerance",
+          "variance_paise": -2,
+          "classification": "explained"
+        }
+      ]
     },
     "estimated_error_cost_paise": {
       "false_review_cost": 37500,
       "false_auto_match_cost": 0,
       "total": 37500
+    },
+    "operational_errors": {
+      "unnecessary_review_groups": 15,
+      "false_auto_match_groups": 0
     },
     "error_costs": {
       "false_positive": "good match sent to human review",
@@ -167,12 +260,203 @@
     "control_totals": {
       "matched_gateway_net_paise": 63027139,
       "matched_bank_paise": 63028324,
-      "residual_paise": 1185
+      "raw_residual_paise": 1185,
+      "explained_variance_paise": 1185,
+      "unexplained_residual_paise": 0,
+      "residual_paise": 0,
+      "variance_breakdown": [
+        {
+          "order_ids": [
+            "ORD00039"
+          ],
+          "txn_ids": [
+            "TXN00042"
+          ],
+          "utrs": [
+            "UTR00041"
+          ],
+          "rule_name": "rounding_tolerance",
+          "variance_paise": -1,
+          "classification": "explained"
+        },
+        {
+          "order_ids": [
+            "ORD00056"
+          ],
+          "txn_ids": [
+            "TXN00060"
+          ],
+          "utrs": [
+            "UTR00052"
+          ],
+          "rule_name": "rounding_tolerance",
+          "variance_paise": 1,
+          "classification": "explained"
+        },
+        {
+          "order_ids": [
+            "ORD00058"
+          ],
+          "txn_ids": [
+            "TXN00062"
+          ],
+          "utrs": [
+            "UTR00054"
+          ],
+          "rule_name": "rounding_tolerance",
+          "variance_paise": -1,
+          "classification": "explained"
+        },
+        {
+          "order_ids": [
+            "ORD00094"
+          ],
+          "txn_ids": [
+            "TXN00101"
+          ],
+          "utrs": [
+            "UTR00089"
+          ],
+          "rule_name": "rounding_tolerance",
+          "variance_paise": 2,
+          "classification": "explained"
+        },
+        {
+          "order_ids": [
+            "ORD00097"
+          ],
+          "txn_ids": [
+            "TXN00104"
+          ],
+          "utrs": [
+            "UTR00092"
+          ],
+          "rule_name": "rounding_tolerance",
+          "variance_paise": -1,
+          "classification": "explained"
+        },
+        {
+          "order_ids": [
+            "ORD00108"
+          ],
+          "txn_ids": [
+            "TXN00116"
+          ],
+          "utrs": [
+            "UTR00107"
+          ],
+          "rule_name": "rounding_tolerance",
+          "variance_paise": -2,
+          "classification": "explained"
+        },
+        {
+          "order_ids": [
+            "ORD00088"
+          ],
+          "txn_ids": [
+            "TXN00094"
+          ],
+          "utrs": [
+            "UTR00083"
+          ],
+          "rule_name": "narration_evidence",
+          "variance_paise": 232,
+          "classification": "explained"
+        },
+        {
+          "order_ids": [
+            "ORD00095"
+          ],
+          "txn_ids": [
+            "TXN00102"
+          ],
+          "utrs": [
+            "UTR00090"
+          ],
+          "rule_name": "narration_evidence",
+          "variance_paise": 132,
+          "classification": "explained"
+        },
+        {
+          "order_ids": [
+            "ORD00054"
+          ],
+          "txn_ids": [
+            "TXN00058"
+          ],
+          "utrs": [
+            "UTR00050"
+          ],
+          "rule_name": "narration_evidence",
+          "variance_paise": 205,
+          "classification": "explained"
+        },
+        {
+          "order_ids": [
+            "ORD00099"
+          ],
+          "txn_ids": [
+            "TXN00106"
+          ],
+          "utrs": [
+            "UTR00094"
+          ],
+          "rule_name": "narration_evidence",
+          "variance_paise": 108,
+          "classification": "explained"
+        },
+        {
+          "order_ids": [
+            "ORD00075"
+          ],
+          "txn_ids": [
+            "TXN00081"
+          ],
+          "utrs": [
+            "UTR00073"
+          ],
+          "rule_name": "narration_evidence",
+          "variance_paise": 119,
+          "classification": "explained"
+        },
+        {
+          "order_ids": [
+            "ORD00066"
+          ],
+          "txn_ids": [
+            "TXN00071"
+          ],
+          "utrs": [
+            "UTR00063"
+          ],
+          "rule_name": "narration_evidence",
+          "variance_paise": 177,
+          "classification": "explained"
+        },
+        {
+          "order_ids": [
+            "ORD00102"
+          ],
+          "txn_ids": [
+            "TXN00109"
+          ],
+          "utrs": [
+            "UTR00099"
+          ],
+          "rule_name": "narration_evidence",
+          "variance_paise": 214,
+          "classification": "explained"
+        }
+      ]
     },
     "estimated_error_cost_paise": {
       "false_review_cost": 7500,
       "false_auto_match_cost": 0,
       "total": 7500
+    },
+    "operational_errors": {
+      "unnecessary_review_groups": 3,
+      "false_auto_match_groups": 0
     },
     "error_costs": {
       "false_positive": "good match sent to human review",
@@ -187,7 +471,10 @@
     "deterministic_auto_matched": 67,
     "agent_augmented_auto_matched": 79,
     "true_exceptions_caught": 18,
-    "tier_two_escalations": 7
+    "tier_two_escalations": 7,
+    "expected_cost_savings_paise": 30000,
+    "false_auto_matches_added": 0,
+    "human_reviews_avoided": 12
   },
   "tier_two_score": {
     "resolvable_residual_groups": 15,
