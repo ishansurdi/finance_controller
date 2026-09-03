@@ -12,32 +12,7 @@ traceable exception for review.
 
 ## System architecture
 
-```mermaid
-flowchart LR
-    subgraph Sources
-        L[Internal ledger]
-        G[Payment gateway]
-        B[Bank statement]
-    end
-
-    L --> V[Schema validation and normalization]
-    G --> V
-    B --> V
-    V --> T0[Tier 0: exact matching]
-    T0 --> T1[Tier 1: deterministic finance rules]
-    T1 --> Gate{Unique and sufficiently confident?}
-    Gate -->|Yes| Closed[Auto-matched]
-    Gate -->|No| Residual[Residual records]
-    Residual --> P[Tier 2 proposer]
-    P --> Check[Independent verifier]
-    Check -->|Evidence agrees| Recovered[Verified recovery]
-    Check -->|Missing or conflicting evidence| Review[Human review]
-    Closed --> Controls[Control totals]
-    Recovered --> Controls
-    Review --> Audit[Immutable audit trail]
-    Controls --> Audit
-    Audit --> Score[Ground-truth evaluation]
-```
+![AI Finance Controller system architecture](docs/system-architecture.png)
 
 The architecture separates finding a possible match from authorizing it. The
 proposer can interpret messy narration, but it cannot close a transaction. The
