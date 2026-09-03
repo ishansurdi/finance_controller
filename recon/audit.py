@@ -29,14 +29,18 @@ def write_audit(path: Path, decisions: tuple[Decision, ...], run_at: str) -> Non
 
 
 def write_exceptions(path: Path, decisions: tuple[Decision, ...]) -> None:
-    fields = ("reason_code", "explanation", "proposer_output", "verifier_output",
-              "order_ids", "txn_ids", "utrs", "confidence")
+    fields = ("tier", "rule_name", "agent_review_status", "reason_code", "explanation",
+              "proposer_output", "verifier_output", "order_ids", "txn_ids", "utrs",
+              "confidence")
     with path.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fields, lineterminator="\n")
         writer.writeheader()
         for item in decisions:
             if item.state == "exception":
-                writer.writerow({"reason_code": item.reason_code, "explanation": item.rationale,
+                writer.writerow({"tier": item.tier, "rule_name": item.rule_name,
+                    "agent_review_status": ("invoked" if item.tier == 2
+                                            else "not_invoked_deterministic_control"),
+                    "reason_code": item.reason_code, "explanation": item.rationale,
                     "proposer_output": item.proposer_output,
                     "verifier_output": item.verifier_output,
                     "order_ids": "|".join(item.order_ids), "txn_ids": "|".join(item.txn_ids),
