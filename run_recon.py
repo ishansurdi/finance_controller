@@ -81,7 +81,10 @@ def main() -> None:
     print(f"True exceptions caught  {report['ablation']['true_exceptions_caught']:>12}")
     throughput = record_count / elapsed if elapsed else 0.0
     print(f"Throughput              {throughput:>12,.0f} records/sec (observed, not persisted)")
-    print(f"Control residual        {agent_report['control_totals']['residual_paise']:>+12,} paise")
+    controls = agent_report["control_totals"]
+    print(f"Raw settlement variance{controls['raw_residual_paise']:>+12,} paise")
+    print(f"Explained variance     {controls['explained_variance_paise']:>+12,} paise")
+    print(f"Unexplained residual   {controls['unexplained_residual_paise']:>+12,} paise")
     print("\nPER-BREAK ACCURACY")
     for name, values in agent_report["per_break_type"].items():
         print(f"  {name:<20} {values['correct']:>3}/{values['total']:<3} {values['accuracy']:>7.1%}")

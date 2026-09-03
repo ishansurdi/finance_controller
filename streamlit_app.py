@@ -70,7 +70,15 @@ st.subheader("Risk and controls")
 risk_one, risk_two, risk_three = st.columns(3)
 risk_one.metric("Exception precision", f"{after['exception_precision']:.1%}")
 risk_two.metric("Exception recall", f"{after['exception_recall']:.1%}")
-risk_three.metric("Control residual", rupees(after["control_totals"]["residual_paise"]))
+controls = after["control_totals"]
+risk_three.metric("Unexplained residual", rupees(controls["unexplained_residual_paise"]),
+                  f"Raw variance {rupees(controls['raw_residual_paise'])}")
+with st.expander("Explain the control variance"):
+    st.write(
+        f"Verified tolerances and documented adjustments explain "
+        f"{rupees(controls['explained_variance_paise'])}."
+    )
+    st.dataframe(controls["variance_breakdown"], hide_index=True, use_container_width=True)
 costs = after["error_costs"]
 st.info(
     f"Cost basis: human review {rupees(costs['human_review_cost_paise'])} per case; "

@@ -1,7 +1,7 @@
 import unittest
 from datetime import date, datetime, timezone
 
-from recon.engine import reconcile
+from recon.engine import control_total, reconcile
 from recon.models import BankRow, GatewayRow, LedgerRow
 
 
@@ -38,6 +38,17 @@ class ReconciliationTests(unittest.TestCase):
     def test_orphan_is_exception(self):
         result = reconcile((), (), (BankRow("U1", 500, date(2026, 1, 3)),))
         self.assertEqual(result[0].reason_code, "bank_credit_with_no_matching_order")
+
+    def test_control_total_separates_explained_variance(self):
+        ledger, gateway = records()
+        bank = BankRow("U1", 9_766, date(2026, 1, 3))
+        decisions = reconcile((ledger,), (gateway,), (bank,))
+
+        totals = control_total(decisions, (gateway,), (bank,))
+
+        self.assertEqual(totals["raw_residual_paise"], 2)
+        self.assertEqual(totals["explained_variance_paise"], 2)
+        self.assertEqual(totals["unexplained_residual_paise"], 0)
 
 
 if __name__ == "__main__":

@@ -130,11 +130,38 @@ def reconcile(ledger: tuple[LedgerRow, ...], gateway: tuple[GatewayRow, ...],
 
 
 def control_total(decisions: tuple[Decision, ...], gateway: tuple[GatewayRow, ...],
-                  bank: tuple[BankRow, ...]) -> dict[str, int]:
+                  bank: tuple[BankRow, ...]) -> dict[str, object]:
     txn_net = {row.txn_id: row.net_amount_paise for row in gateway}
     bank_amount = {row.utr: row.settlement_amount_paise for row in bank}
     matched = [d for d in decisions if d.state == "auto_matched"]
     gateway_total = sum(txn_net[i] for d in matched for i in d.txn_ids)
     bank_total = sum(bank_amount[i] for d in matched for i in d.utrs)
-    return {"matched_gateway_net_paise": gateway_total, "matched_bank_paise": bank_total,
-            "residual_paise": bank_total - gateway_total}
+    breakdown = []
+    explained = 0
+    for decision in matched:
+        variance = (sum(bank_amount[value] for value in decision.utrs)
+                    - sum(txn_net[value] for value in decision.txn_ids))
+        if variance == 0:
+            continue
+        is_explained = decision.rule_name in {"rounding_tolerance", "narration_evidence"}
+        if is_explained:
+            explained += variance
+        breakdown.append({
+            "order_ids": list(decision.order_ids),
+            "txn_ids": list(decision.txn_ids),
+            "utrs": list(decision.utrs),
+            "rule_name": decision.rule_name,
+            "variance_paise": variance,
+            "classification": "explained" if is_explained else "unexplained",
+        })
+    raw_residual = bank_total - gateway_total
+    unexplained = raw_residual - explained
+    return {
+        "matched_gateway_net_paise": gateway_total,
+        "matched_bank_paise": bank_total,
+        "raw_residual_paise": raw_residual,
+        "explained_variance_paise": explained,
+        "unexplained_residual_paise": unexplained,
+        "residual_paise": unexplained,
+        "variance_breakdown": breakdown,
+    }
