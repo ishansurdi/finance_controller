@@ -14,7 +14,8 @@ class ExceptionOutputTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "exceptions.csv"
             write_exceptions(path, (decision,))
-            row = next(csv.DictReader(path.open(encoding="utf-8")))
+            with path.open(encoding="utf-8") as handle:
+                row = next(csv.DictReader(handle))
 
         self.assertEqual(row["tier"], "1")
         self.assertEqual(row["rule_name"], "duplicate_detect")
@@ -27,7 +28,8 @@ class ExceptionOutputTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "exceptions.csv"
             write_exceptions(path, (decision,))
-            row = next(csv.DictReader(path.open(encoding="utf-8")))
+            with path.open(encoding="utf-8") as handle:
+                row = next(csv.DictReader(handle))
 
         self.assertEqual(row["agent_review_status"], "invoked")
         self.assertEqual(row["proposer_output"], "Proposed")
