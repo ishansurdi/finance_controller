@@ -56,6 +56,10 @@ def evaluate(decisions: tuple[Decision, ...], truth: tuple[MatchGroup, ...],
                 "total": (false_reviews * HUMAN_REVIEW_COST_PAISE
                           + false_auto_matches * FALSE_AUTO_MATCH_COST_PAISE),
             },
+            "operational_errors": {
+                "unnecessary_review_groups": false_reviews,
+                "false_auto_match_groups": false_auto_matches,
+            },
             "error_costs": {"false_positive": "good match sent to human review",
                             "false_negative": "bad item silently auto-closed; may corrupt books",
                             "human_review_cost_paise": HUMAN_REVIEW_COST_PAISE,
@@ -66,6 +70,8 @@ def ablation(deterministic: dict[str, object], augmented: dict[str, object]) -> 
     """Quantify the incremental contribution of the verified agent layer."""
     deterministic_tiers = deterministic["resolved_per_tier"]
     augmented_tiers = augmented["resolved_per_tier"]
+    deterministic_cost = deterministic["estimated_error_cost_paise"]["total"]
+    augmented_cost = augmented["estimated_error_cost_paise"]["total"]
     return {
         "match_rate_delta": augmented["match_rate"] - deterministic["match_rate"],
         "agent_groups_recovered": augmented_tiers.get("2", 0),
@@ -73,6 +79,15 @@ def ablation(deterministic: dict[str, object], augmented: dict[str, object]) -> 
         "agent_augmented_auto_matched": sum(augmented_tiers.values()),
         "true_exceptions_caught": augmented["confusion_matrix"]["exception_as_exception"],
         "tier_two_escalations": augmented.get("exceptions_per_tier", {}).get("2", 0),
+        "expected_cost_savings_paise": deterministic_cost - augmented_cost,
+        "false_auto_matches_added": (
+            augmented["operational_errors"]["false_auto_match_groups"]
+            - deterministic["operational_errors"]["false_auto_match_groups"]
+        ),
+        "human_reviews_avoided": (
+            deterministic["operational_errors"]["unnecessary_review_groups"]
+            - augmented["operational_errors"]["unnecessary_review_groups"]
+        ),
     }
 
 

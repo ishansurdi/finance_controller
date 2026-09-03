@@ -14,6 +14,12 @@ from recon.load import load_bank, load_gateway, load_ground_truth, load_ledger, 
 from recon.residual import conclusive_decisions, isolate_residual
 
 
+def format_rupees(paise: int) -> str:
+    sign = "-" if paise < 0 else ""
+    whole, fraction = divmod(abs(paise), 100)
+    return f"{sign}INR {whole:,}.{fraction:02d}"
+
+
 def main() -> None:
     root = Path(__file__).resolve().parent
     load_env(root / ".env")
@@ -79,6 +85,9 @@ def main() -> None:
     print(f"Correct safety escalations{tier_two['correct_safety_escalations']:>9}")
     print(f"Resolvable misses       {tier_two['resolvable_escalations']:>12}")
     print(f"True exceptions caught  {report['ablation']['true_exceptions_caught']:>12}")
+    print(f"False auto-matches      {report['ablation']['false_auto_matches_added']:>12}")
+    print(f"Human reviews avoided   {report['ablation']['human_reviews_avoided']:>12}")
+    print(f"Expected cost saved     {format_rupees(report['ablation']['expected_cost_savings_paise']):>12}")
     throughput = record_count / elapsed if elapsed else 0.0
     print(f"Throughput              {throughput:>12,.0f} records/sec (observed, not persisted)")
     controls = agent_report["control_totals"]

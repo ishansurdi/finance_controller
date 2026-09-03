@@ -7,9 +7,13 @@ from recon.models import Decision, MatchGroup
 class AblationTests(unittest.TestCase):
     def test_reports_agent_increment(self):
         before = {"match_rate": 0.8, "resolved_per_tier": {"0": 40, "1": 40},
-                  "confusion_matrix": {"exception_as_exception": 5}, "exceptions_per_tier": {"1": 5}}
+                  "confusion_matrix": {"exception_as_exception": 5}, "exceptions_per_tier": {"1": 5},
+                  "estimated_error_cost_paise": {"total": 7500},
+                  "operational_errors": {"false_auto_match_groups": 0, "unnecessary_review_groups": 3}}
         after = {"match_rate": 0.9, "resolved_per_tier": {"0": 40, "1": 40, "2": 10},
-                 "confusion_matrix": {"exception_as_exception": 5}, "exceptions_per_tier": {"1": 3, "2": 2}}
+                 "confusion_matrix": {"exception_as_exception": 5}, "exceptions_per_tier": {"1": 3, "2": 2},
+                 "estimated_error_cost_paise": {"total": 2500},
+                 "operational_errors": {"false_auto_match_groups": 0, "unnecessary_review_groups": 1}}
 
         result = ablation(before, after)
 
@@ -17,6 +21,9 @@ class AblationTests(unittest.TestCase):
         self.assertEqual(result["agent_groups_recovered"], 10)
         self.assertEqual(result["tier_two_escalations"], 2)
         self.assertEqual(result["true_exceptions_caught"], 5)
+        self.assertEqual(result["expected_cost_savings_paise"], 5000)
+        self.assertEqual(result["human_reviews_avoided"], 2)
+        self.assertEqual(result["false_auto_matches_added"], 0)
 
     def test_tier_two_scores_recovery_and_escalation_separately(self):
         truth = (

@@ -65,6 +65,17 @@ third.metric("Recovery accuracy", f"{tier_two['recovery_accuracy']:.1%}",
 fourth.metric("Safety escalations", tier_two["correct_safety_escalations"],
               f"{tier_two['resolvable_escalations']} resolvable misses")
 st.caption(f"Backend provenance: `{report['agent_backend']}`")
+if ablation["false_auto_matches_added"] == 0:
+    st.success(
+        f"The precision decline comes from {tier_two['resolvable_escalations']} good groups sent "
+        f"to review—not false auto-matches. Tier 2 avoided {ablation['human_reviews_avoided']} "
+        f"reviews and saved {rupees(ablation['expected_cost_savings_paise'])} at the stated costs."
+    )
+else:
+    st.error(
+        f"Tier 2 introduced {ablation['false_auto_matches_added']} false auto-matches. "
+        "Tighten the confidence gate before presenting."
+    )
 
 st.subheader("Risk and controls")
 risk_one, risk_two, risk_three = st.columns(3)
