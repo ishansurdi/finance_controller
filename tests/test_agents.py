@@ -31,6 +31,12 @@ class AgentTests(unittest.TestCase):
         self.assertIn("linked narration", result[0].proposer_output)
         self.assertIn("Rejected", result[0].verifier_output)
 
+    def test_mismatched_documented_adjustment_is_rejected(self):
+        result = reconcile_residual(residual("PG NET TXN00001; ORDER ORD00001; ADJ 99P"))
+
+        self.assertEqual(result[0].state, "exception")
+        self.assertIn("does not equal drift", result[0].verifier_output)
+
 
 if __name__ == "__main__":
     unittest.main()

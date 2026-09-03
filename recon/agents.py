@@ -11,6 +11,7 @@ from .models import BankRow, Decision, GatewayRow
 from .residual import Residual
 
 ID_PATTERN = re.compile(r"\b(?:TXN|ORD)\d{5}\b")
+ADJUSTMENT_PATTERN = re.compile(r"\bADJ\s+(\d+)P\b", re.IGNORECASE)
 
 
 class NarrationBackend(Protocol):
@@ -86,20 +87,30 @@ def verify(proposal: Proposal) -> Decision:
     order_refs = [value for value in proposal.extracted_ids if value.startswith("ORD")]
     references_agree = txn_refs == [txn.txn_id] and order_refs == [txn.order_id]
     drift = bank.settlement_amount_paise - txn.net_amount_paise
-    if not references_agree:
+    adjustments = ADJUSTMENT_PATTERN.findall(bank.bank_narration)
+    documented_adjustment = int(adjustments[0]) if len(adjustments) == 1 else 0
+    adjustment_agrees = drift == documented_adjustment
+    if not references_agree or not adjustment_agrees:
+        failed_checks = []
+        if not references_agree:
+            failed_checks.append(f"references must be {txn.txn_id} and {txn.order_id}")
+        if not adjustment_agrees:
+            failed_checks.append(
+                f"documented adjustment {documented_adjustment:+d} does not equal drift {drift:+d} paise"
+            )
         return Decision((txn.order_id,), (txn.txn_id,), (bank.utr,), "exception", 2,
             "agent_verifier_disagreement", 0.35,
-            f"{proposal.rationale} Verifier rejected conflicting references: "
-            f"expected {txn.txn_id}/{txn.order_id}.", f"drift={drift}paise",
+            f"{proposal.rationale} Verifier rejected: {'; '.join(failed_checks)}.",
+            f"drift={drift}paise; documented_adjustment={documented_adjustment}paise",
             "proposer_verifier_disagreement", True,
             proposal.rationale,
-            f"Rejected: expected corroborating references {txn.txn_id} and {txn.order_id}.")
+            f"Rejected: {'; '.join(failed_checks)}.")
     return Decision((txn.order_id,), (txn.txn_id,), (bank.utr,), "auto_matched", 2,
         "narration_evidence", 0.96,
         f"{proposal.rationale} Verifier confirmed both transaction and order references; "
         f"documented adjustment is {drift:+d} paise.", f"drift={drift}paise", "", False,
         proposal.rationale,
-        f"Confirmed both references; accepted documented drift {drift:+d} paise.")
+        f"Confirmed both references and documented adjustment {documented_adjustment:+d} paise.")
 
 
 def _merge_collisions(decisions: list[Decision], residual: Residual) -> list[Decision]:
