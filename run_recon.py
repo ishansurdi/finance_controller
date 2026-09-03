@@ -8,12 +8,15 @@ from time import perf_counter
 from recon.audit import write_audit, write_exceptions
 from recon.agents import reconcile_residual
 from recon.engine import control_total, reconcile
+from recon.environment import load_env
 from recon.evaluate import ablation, cost_curve, evaluate, score_tier_two
 from recon.load import load_bank, load_gateway, load_ground_truth, load_ledger, structural_anomalies
 from recon.residual import conclusive_decisions, isolate_residual
 
 
 def main() -> None:
+    root = Path(__file__).resolve().parent
+    load_env(root / ".env")
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--agent-backend", choices=("replay", "offline", "openai", "abstain"),
                         default="replay")
@@ -33,7 +36,6 @@ def main() -> None:
     else:
         from recon.agents import EvidenceBackend
         backend = EvidenceBackend()
-    root = Path(__file__).resolve().parent
     data, out = root / "data", root / "out"
     ledger = load_ledger(data / "ledger.csv")
     gateway = load_gateway(data / "gateway.csv")

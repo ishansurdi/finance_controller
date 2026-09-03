@@ -57,10 +57,17 @@ python -m unittest discover -s tests -v
 ```
 
 The default checked-in replay makes the canonical demo byte-reproducible and is
-identified in the report. To run the actual model-backed narration interpreter:
+identified in the report. To run the actual model-backed narration interpreter,
+place your key in the ignored `.env` file created from `.env.example`:
+
+```text
+OPENAI_API_KEY=your-openai-api-key
+OPENAI_MODEL=gpt-5.5
+```
+
+Then run:
 
 ```bash
-set OPENAI_API_KEY=your-key
 python run_recon.py --agent-backend openai
 ```
 

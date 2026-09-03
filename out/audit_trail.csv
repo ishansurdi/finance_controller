@@ -1,354 +1,534 @@
 record_type,record_id,state,tier,rule_name,confidence,rationale,proposer_output,verifier_output,tolerance_used,reason_code,timestamp
-order,ORD00018,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-transaction,TXN00018,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-transaction,TXN00019,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-bank_credit,UTR00022,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-order,ORD00020,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-transaction,TXN00021,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-transaction,TXN00022,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-bank_credit,UTR00024,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-order,ORD00036,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-transaction,TXN00038,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-transaction,TXN00039,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-bank_credit,UTR00038,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-order,ORD00052,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-transaction,TXN00055,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-transaction,TXN00056,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-bank_credit,UTR00047,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-order,ORD00059,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-transaction,TXN00063,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-transaction,TXN00064,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-bank_credit,UTR00056,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-order,ORD00067,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-transaction,TXN00072,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-transaction,TXN00073,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-bank_credit,UTR00064,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-order,ORD00092,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-transaction,TXN00098,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-transaction,TXN00099,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-bank_credit,UTR00087,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-order,ORD00106,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-transaction,TXN00113,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-transaction,TXN00114,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-bank_credit,UTR00105,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-06-26T17:03:00+00:00
-order,ORD00003,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00003,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00003,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00005,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00005,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00005,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00007,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00007,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00007,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00010,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00010,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00010,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00012,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00012,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00013,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00013,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00013,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00014,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00014,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00014,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00015,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00016,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00016,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00018,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00019,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00020,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00023,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00022,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00024,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00026,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00029,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00031,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00031,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00030,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00032,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00032,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00032,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00034,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00034,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00035,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00037,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00037,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00037,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00040,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00039,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00038,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00041,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00040,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00045,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00048,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00043,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00055,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00059,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00051,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00057,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00061,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00053,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00060,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00065,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00057,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00062,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00067,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00059,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00065,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00070,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00062,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00068,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00074,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00065,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00069,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00075,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00066,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00071,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00077,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00068,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00073,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00079,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00071,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00074,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00080,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00072,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00079,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00085,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00076,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00089,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00095,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00084,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00090,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00096,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00085,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00091,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00097,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00086,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00093,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00100,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00088,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00096,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00103,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00091,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00107,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00115,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00106,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00109,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00117,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00108,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00116,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00124,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00113,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00008,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00008,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00008,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00009,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00009,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00009,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00017,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00017,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00021,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00021,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00023,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00025,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00034,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00036,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00036,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00061,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00066,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00058,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00078,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00084,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00075,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00084,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00090,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00081,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00098,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00105,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00093,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00105,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00112,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00104,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00039,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00042,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00041,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-06-26T17:03:00+00:00
-order,ORD00056,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift 1 paise.,,,lag=2d; drift=1paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00060,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift 1 paise.,,,lag=2d; drift=1paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00052,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift 1 paise.,,,lag=2d; drift=1paise,,2026-06-26T17:03:00+00:00
-order,ORD00058,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00062,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00054,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-06-26T17:03:00+00:00
-order,ORD00094,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift 2 paise.,,,lag=2d; drift=2paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00101,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift 2 paise.,,,lag=2d; drift=2paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00089,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift 2 paise.,,,lag=2d; drift=2paise,,2026-06-26T17:03:00+00:00
-order,ORD00097,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00104,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00092,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-06-26T17:03:00+00:00
-order,ORD00108,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -2 paise.,,,lag=2d; drift=-2paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00116,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -2 paise.,,,lag=2d; drift=-2paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00107,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -2 paise.,,,lag=2d; drift=-2paise,,2026-06-26T17:03:00+00:00
-order,ORD00011,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00011,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00011,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00012,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00015,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00015,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00016,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00017,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00023,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00025,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00027,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00028,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00053,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00057,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00048,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00049,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00072,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00078,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00069,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00070,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00100,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00107,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00095,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00096,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00101,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00108,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00097,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00098,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00103,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00110,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00100,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00101,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00024,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00025,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00026,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00027,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00026,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00027,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00028,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00029,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00029,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00040,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00041,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00042,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00043,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00044,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00043,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00044,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00045,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00046,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00047,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00042,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00048,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00049,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00050,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00051,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00051,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00052,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00053,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00054,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00046,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00076,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00077,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00082,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00083,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00074,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00082,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00083,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00088,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00089,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00080,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00085,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=3; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00086,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=3; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00087,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=3; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00091,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=3; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00092,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=3; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00093,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=3; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00082,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=3; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00110,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00111,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00112,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00113,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00118,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00119,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00120,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00121,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00109,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00019,exception,1,orphan_detect,0.0,Bank credit has no reconcilable ledger or gateway transaction.,,,none,bank_credit_with_no_matching_order,2026-06-26T17:03:00+00:00
-bank_credit,UTR00020,exception,1,orphan_detect,0.0,Bank credit has no reconcilable ledger or gateway transaction.,,,none,bank_credit_with_no_matching_order,2026-06-26T17:03:00+00:00
-bank_credit,UTR00055,exception,1,orphan_detect,0.0,Bank credit has no reconcilable ledger or gateway transaction.,,,none,bank_credit_with_no_matching_order,2026-06-26T17:03:00+00:00
-bank_credit,UTR00077,exception,1,orphan_detect,0.0,Bank credit has no reconcilable ledger or gateway transaction.,,,none,bank_credit_with_no_matching_order,2026-06-26T17:03:00+00:00
-bank_credit,UTR00102,exception,1,orphan_detect,0.0,Bank credit has no reconcilable ledger or gateway transaction.,,,none,bank_credit_with_no_matching_order,2026-06-26T17:03:00+00:00
-bank_credit,UTR00112,exception,1,orphan_detect,0.0,Bank credit has no reconcilable ledger or gateway transaction.,,,none,bank_credit_with_no_matching_order,2026-06-26T17:03:00+00:00
-order,ORD00088,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00094, ORD00088 to TXN00094. Verifier confirmed both transaction and order references; documented adjustment is +232 paise.","Proposer linked narration identifiers TXN00094, ORD00088 to TXN00094.",Confirmed both references; accepted documented drift +232 paise.,drift=232paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00094,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00094, ORD00088 to TXN00094. Verifier confirmed both transaction and order references; documented adjustment is +232 paise.","Proposer linked narration identifiers TXN00094, ORD00088 to TXN00094.",Confirmed both references; accepted documented drift +232 paise.,drift=232paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00083,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00094, ORD00088 to TXN00094. Verifier confirmed both transaction and order references; documented adjustment is +232 paise.","Proposer linked narration identifiers TXN00094, ORD00088 to TXN00094.",Confirmed both references; accepted documented drift +232 paise.,drift=232paise,,2026-06-26T17:03:00+00:00
-order,ORD00095,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00102, ORD00095 to TXN00102. Verifier confirmed both transaction and order references; documented adjustment is +132 paise.","Proposer linked narration identifiers TXN00102, ORD00095 to TXN00102.",Confirmed both references; accepted documented drift +132 paise.,drift=132paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00102,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00102, ORD00095 to TXN00102. Verifier confirmed both transaction and order references; documented adjustment is +132 paise.","Proposer linked narration identifiers TXN00102, ORD00095 to TXN00102.",Confirmed both references; accepted documented drift +132 paise.,drift=132paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00090,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00102, ORD00095 to TXN00102. Verifier confirmed both transaction and order references; documented adjustment is +132 paise.","Proposer linked narration identifiers TXN00102, ORD00095 to TXN00102.",Confirmed both references; accepted documented drift +132 paise.,drift=132paise,,2026-06-26T17:03:00+00:00
-order,ORD00006,exception,2,agent_verifier_disagreement,0.35,Proposer linked narration identifiers TXN00006 to TXN00006. Verifier rejected conflicting references: expected TXN00006/ORD00006.,Proposer linked narration identifiers TXN00006 to TXN00006.,Rejected: expected corroborating references TXN00006 and ORD00006.,drift=233paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-transaction,TXN00006,exception,2,agent_verifier_disagreement,0.35,Proposer linked narration identifiers TXN00006 to TXN00006. Verifier rejected conflicting references: expected TXN00006/ORD00006.,Proposer linked narration identifiers TXN00006 to TXN00006.,Rejected: expected corroborating references TXN00006 and ORD00006.,drift=233paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-bank_credit,UTR00006,exception,2,agent_verifier_disagreement,0.35,Proposer linked narration identifiers TXN00006 to TXN00006. Verifier rejected conflicting references: expected TXN00006/ORD00006.,Proposer linked narration identifiers TXN00006 to TXN00006.,Rejected: expected corroborating references TXN00006 and ORD00006.,drift=233paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-order,ORD00054,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00058, ORD00054 to TXN00058. Verifier confirmed both transaction and order references; documented adjustment is +205 paise.","Proposer linked narration identifiers TXN00058, ORD00054 to TXN00058.",Confirmed both references; accepted documented drift +205 paise.,drift=205paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00058,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00058, ORD00054 to TXN00058. Verifier confirmed both transaction and order references; documented adjustment is +205 paise.","Proposer linked narration identifiers TXN00058, ORD00054 to TXN00058.",Confirmed both references; accepted documented drift +205 paise.,drift=205paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00050,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00058, ORD00054 to TXN00058. Verifier confirmed both transaction and order references; documented adjustment is +205 paise.","Proposer linked narration identifiers TXN00058, ORD00054 to TXN00058.",Confirmed both references; accepted documented drift +205 paise.,drift=205paise,,2026-06-26T17:03:00+00:00
-order,ORD00099,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00106, ORD00099 to TXN00106. Verifier confirmed both transaction and order references; documented adjustment is +108 paise.","Proposer linked narration identifiers TXN00106, ORD00099 to TXN00106.",Confirmed both references; accepted documented drift +108 paise.,drift=108paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00106,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00106, ORD00099 to TXN00106. Verifier confirmed both transaction and order references; documented adjustment is +108 paise.","Proposer linked narration identifiers TXN00106, ORD00099 to TXN00106.",Confirmed both references; accepted documented drift +108 paise.,drift=108paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00094,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00106, ORD00099 to TXN00106. Verifier confirmed both transaction and order references; documented adjustment is +108 paise.","Proposer linked narration identifiers TXN00106, ORD00099 to TXN00106.",Confirmed both references; accepted documented drift +108 paise.,drift=108paise,,2026-06-26T17:03:00+00:00
-order,ORD00075,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00081, ORD00075 to TXN00081. Verifier confirmed both transaction and order references; documented adjustment is +119 paise.","Proposer linked narration identifiers TXN00081, ORD00075 to TXN00081.",Confirmed both references; accepted documented drift +119 paise.,drift=119paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00081,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00081, ORD00075 to TXN00081. Verifier confirmed both transaction and order references; documented adjustment is +119 paise.","Proposer linked narration identifiers TXN00081, ORD00075 to TXN00081.",Confirmed both references; accepted documented drift +119 paise.,drift=119paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00073,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00081, ORD00075 to TXN00081. Verifier confirmed both transaction and order references; documented adjustment is +119 paise.","Proposer linked narration identifiers TXN00081, ORD00075 to TXN00081.",Confirmed both references; accepted documented drift +119 paise.,drift=119paise,,2026-06-26T17:03:00+00:00
-order,ORD00080,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00086, ORD00080 to TXN00086. | Proposer linked narration identifiers TXN00087, ORD00081 to TXN00087.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00081,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00086, ORD00080 to TXN00086. | Proposer linked narration identifiers TXN00087, ORD00081 to TXN00087.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00086,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00086, ORD00080 to TXN00086. | Proposer linked narration identifiers TXN00087, ORD00081 to TXN00087.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00087,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00086, ORD00080 to TXN00086. | Proposer linked narration identifiers TXN00087, ORD00081 to TXN00087.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00078,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00086, ORD00080 to TXN00086. | Proposer linked narration identifiers TXN00087, ORD00081 to TXN00087.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00079,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00086, ORD00080 to TXN00086. | Proposer linked narration identifiers TXN00087, ORD00081 to TXN00087.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00028,exception,2,agent_verifier_disagreement,0.35,Proposer linked narration identifiers TXN00030 to TXN00030. Verifier rejected conflicting references: expected TXN00030/ORD00028.,Proposer linked narration identifiers TXN00030 to TXN00030.,Rejected: expected corroborating references TXN00030 and ORD00028.,drift=199paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-transaction,TXN00030,exception,2,agent_verifier_disagreement,0.35,Proposer linked narration identifiers TXN00030 to TXN00030. Verifier rejected conflicting references: expected TXN00030/ORD00028.,Proposer linked narration identifiers TXN00030 to TXN00030.,Rejected: expected corroborating references TXN00030 and ORD00028.,drift=199paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-bank_credit,UTR00030,exception,2,agent_verifier_disagreement,0.35,Proposer linked narration identifiers TXN00030 to TXN00030. Verifier rejected conflicting references: expected TXN00030/ORD00028.,Proposer linked narration identifiers TXN00030 to TXN00030.,Rejected: expected corroborating references TXN00030 and ORD00028.,drift=199paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-order,ORD00066,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00071, ORD00066 to TXN00071. Verifier confirmed both transaction and order references; documented adjustment is +177 paise.","Proposer linked narration identifiers TXN00071, ORD00066 to TXN00071.",Confirmed both references; accepted documented drift +177 paise.,drift=177paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00071,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00071, ORD00066 to TXN00071. Verifier confirmed both transaction and order references; documented adjustment is +177 paise.","Proposer linked narration identifiers TXN00071, ORD00066 to TXN00071.",Confirmed both references; accepted documented drift +177 paise.,drift=177paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00063,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00071, ORD00066 to TXN00071. Verifier confirmed both transaction and order references; documented adjustment is +177 paise.","Proposer linked narration identifiers TXN00071, ORD00066 to TXN00071.",Confirmed both references; accepted documented drift +177 paise.,drift=177paise,,2026-06-26T17:03:00+00:00
-order,ORD00033,exception,2,agent_verifier_disagreement,0.35,"Proposer linked narration identifiers TXN99999, ORD00033 to TXN00035. Verifier rejected conflicting references: expected TXN00035/ORD00033.","Proposer linked narration identifiers TXN99999, ORD00033 to TXN00035.",Rejected: expected corroborating references TXN00035 and ORD00033.,drift=100paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-transaction,TXN00035,exception,2,agent_verifier_disagreement,0.35,"Proposer linked narration identifiers TXN99999, ORD00033 to TXN00035. Verifier rejected conflicting references: expected TXN00035/ORD00033.","Proposer linked narration identifiers TXN99999, ORD00033 to TXN00035.",Rejected: expected corroborating references TXN00035 and ORD00033.,drift=100paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-bank_credit,UTR00035,exception,2,agent_verifier_disagreement,0.35,"Proposer linked narration identifiers TXN99999, ORD00033 to TXN00035. Verifier rejected conflicting references: expected TXN00035/ORD00033.","Proposer linked narration identifiers TXN99999, ORD00033 to TXN00035.",Rejected: expected corroborating references TXN00035 and ORD00033.,drift=100paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-order,ORD00031,exception,2,agent_verifier_disagreement,0.35,"Proposer linked narration identifiers TXN99999, ORD00031 to TXN00033. Verifier rejected conflicting references: expected TXN00033/ORD00031.","Proposer linked narration identifiers TXN99999, ORD00031 to TXN00033.",Rejected: expected corroborating references TXN00033 and ORD00031.,drift=100paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-transaction,TXN00033,exception,2,agent_verifier_disagreement,0.35,"Proposer linked narration identifiers TXN99999, ORD00031 to TXN00033. Verifier rejected conflicting references: expected TXN00033/ORD00031.","Proposer linked narration identifiers TXN99999, ORD00031 to TXN00033.",Rejected: expected corroborating references TXN00033 and ORD00031.,drift=100paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-bank_credit,UTR00033,exception,2,agent_verifier_disagreement,0.35,"Proposer linked narration identifiers TXN99999, ORD00031 to TXN00033. Verifier rejected conflicting references: expected TXN00033/ORD00031.","Proposer linked narration identifiers TXN99999, ORD00031 to TXN00033.",Rejected: expected corroborating references TXN00033 and ORD00031.,drift=100paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-order,ORD00004,exception,2,agent_verifier_disagreement,0.35,Proposer linked narration identifiers TXN00004 to TXN00004. Verifier rejected conflicting references: expected TXN00004/ORD00004.,Proposer linked narration identifiers TXN00004 to TXN00004.,Rejected: expected corroborating references TXN00004 and ORD00004.,drift=151paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-transaction,TXN00004,exception,2,agent_verifier_disagreement,0.35,Proposer linked narration identifiers TXN00004 to TXN00004. Verifier rejected conflicting references: expected TXN00004/ORD00004.,Proposer linked narration identifiers TXN00004 to TXN00004.,Rejected: expected corroborating references TXN00004 and ORD00004.,drift=151paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-bank_credit,UTR00004,exception,2,agent_verifier_disagreement,0.35,Proposer linked narration identifiers TXN00004 to TXN00004. Verifier rejected conflicting references: expected TXN00004/ORD00004.,Proposer linked narration identifiers TXN00004 to TXN00004.,Rejected: expected corroborating references TXN00004 and ORD00004.,drift=151paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-order,ORD00001,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00001, ORD00001 to TXN00001. | Proposer linked narration identifiers TXN00002, ORD00002 to TXN00002.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00002,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00001, ORD00001 to TXN00001. | Proposer linked narration identifiers TXN00002, ORD00002 to TXN00002.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00001,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00001, ORD00001 to TXN00001. | Proposer linked narration identifiers TXN00002, ORD00002 to TXN00002.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00002,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00001, ORD00001 to TXN00001. | Proposer linked narration identifiers TXN00002, ORD00002 to TXN00002.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00001,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00001, ORD00001 to TXN00001. | Proposer linked narration identifiers TXN00002, ORD00002 to TXN00002.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00002,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00001, ORD00001 to TXN00001. | Proposer linked narration identifiers TXN00002, ORD00002 to TXN00002.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00046,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00049, ORD00046 to TXN00049. | Proposer linked narration identifiers TXN00050, ORD00047 to TXN00050.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00047,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00049, ORD00046 to TXN00049. | Proposer linked narration identifiers TXN00050, ORD00047 to TXN00050.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00049,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00049, ORD00046 to TXN00049. | Proposer linked narration identifiers TXN00050, ORD00047 to TXN00050.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00050,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00049, ORD00046 to TXN00049. | Proposer linked narration identifiers TXN00050, ORD00047 to TXN00050.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00044,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00049, ORD00046 to TXN00049. | Proposer linked narration identifiers TXN00050, ORD00047 to TXN00050.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00045,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00049, ORD00046 to TXN00049. | Proposer linked narration identifiers TXN00050, ORD00047 to TXN00050.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00104,exception,2,agent_verifier_disagreement,0.35,"Proposer linked narration identifiers TXN99999, ORD00104 to TXN00111. Verifier rejected conflicting references: expected TXN00111/ORD00104.","Proposer linked narration identifiers TXN99999, ORD00104 to TXN00111.",Rejected: expected corroborating references TXN00111 and ORD00104.,drift=100paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-transaction,TXN00111,exception,2,agent_verifier_disagreement,0.35,"Proposer linked narration identifiers TXN99999, ORD00104 to TXN00111. Verifier rejected conflicting references: expected TXN00111/ORD00104.","Proposer linked narration identifiers TXN99999, ORD00104 to TXN00111.",Rejected: expected corroborating references TXN00111 and ORD00104.,drift=100paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-bank_credit,UTR00103,exception,2,agent_verifier_disagreement,0.35,"Proposer linked narration identifiers TXN99999, ORD00104 to TXN00111. Verifier rejected conflicting references: expected TXN00111/ORD00104.","Proposer linked narration identifiers TXN99999, ORD00104 to TXN00111.",Rejected: expected corroborating references TXN00111 and ORD00104.,drift=100paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-order,ORD00102,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00109, ORD00102 to TXN00109. Verifier confirmed both transaction and order references; documented adjustment is +214 paise.","Proposer linked narration identifiers TXN00109, ORD00102 to TXN00109.",Confirmed both references; accepted documented drift +214 paise.,drift=214paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00109,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00109, ORD00102 to TXN00109. Verifier confirmed both transaction and order references; documented adjustment is +214 paise.","Proposer linked narration identifiers TXN00109, ORD00102 to TXN00109.",Confirmed both references; accepted documented drift +214 paise.,drift=214paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00099,auto_matched,2,narration_evidence,0.96,"Proposer linked narration identifiers TXN00109, ORD00102 to TXN00109. Verifier confirmed both transaction and order references; documented adjustment is +214 paise.","Proposer linked narration identifiers TXN00109, ORD00102 to TXN00109.",Confirmed both references; accepted documented drift +214 paise.,drift=214paise,,2026-06-26T17:03:00+00:00
-order,ORD00063,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00068, ORD00063 to TXN00068. | Proposer linked narration identifiers TXN00069, ORD00064 to TXN00069.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00064,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00068, ORD00063 to TXN00068. | Proposer linked narration identifiers TXN00069, ORD00064 to TXN00069.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00068,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00068, ORD00063 to TXN00068. | Proposer linked narration identifiers TXN00069, ORD00064 to TXN00069.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00069,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00068, ORD00063 to TXN00068. | Proposer linked narration identifiers TXN00069, ORD00064 to TXN00069.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00060,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00068, ORD00063 to TXN00068. | Proposer linked narration identifiers TXN00069, ORD00064 to TXN00069.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00061,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00068, ORD00063 to TXN00068. | Proposer linked narration identifiers TXN00069, ORD00064 to TXN00069.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00114,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00122, ORD00114 to TXN00122. | Proposer linked narration identifiers TXN00123, ORD00115 to TXN00123.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00115,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00122, ORD00114 to TXN00122. | Proposer linked narration identifiers TXN00123, ORD00115 to TXN00123.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00122,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00122, ORD00114 to TXN00122. | Proposer linked narration identifiers TXN00123, ORD00115 to TXN00123.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-transaction,TXN00123,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00122, ORD00114 to TXN00122. | Proposer linked narration identifiers TXN00123, ORD00115 to TXN00123.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00110,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00122, ORD00114 to TXN00122. | Proposer linked narration identifiers TXN00123, ORD00115 to TXN00123.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-bank_credit,UTR00111,auto_matched,2,narration_collision_resolution,0.96,Proposer separated equal-amount candidates using narration; verifier confirmed every pair.,"Proposer linked narration identifiers TXN00122, ORD00114 to TXN00122. | Proposer linked narration identifiers TXN00123, ORD00115 to TXN00123.",Confirmed each narrated pair is unique within the equal-amount collision.,members=2; drift=0paise,,2026-06-26T17:03:00+00:00
-order,ORD00070,exception,2,agent_verifier_disagreement,0.35,"Proposer linked narration identifiers TXN99999, ORD00070 to TXN00076. Verifier rejected conflicting references: expected TXN00076/ORD00070.","Proposer linked narration identifiers TXN99999, ORD00070 to TXN00076.",Rejected: expected corroborating references TXN00076 and ORD00070.,drift=100paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-transaction,TXN00076,exception,2,agent_verifier_disagreement,0.35,"Proposer linked narration identifiers TXN99999, ORD00070 to TXN00076. Verifier rejected conflicting references: expected TXN00076/ORD00070.","Proposer linked narration identifiers TXN99999, ORD00070 to TXN00076.",Rejected: expected corroborating references TXN00076 and ORD00070.,drift=100paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
-bank_credit,UTR00067,exception,2,agent_verifier_disagreement,0.35,"Proposer linked narration identifiers TXN99999, ORD00070 to TXN00076. Verifier rejected conflicting references: expected TXN00076/ORD00070.","Proposer linked narration identifiers TXN99999, ORD00070 to TXN00076.",Rejected: expected corroborating references TXN00076 and ORD00070.,drift=100paise,proposer_verifier_disagreement,2026-06-26T17:03:00+00:00
+order,ORD00075,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00075,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00076,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+bank_credit,UTR00061,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+order,ORD00085,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00086,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00087,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+bank_credit,UTR00072,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+order,ORD00086,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00088,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00089,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+bank_credit,UTR00073,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+order,ORD00106,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00109,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00110,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+bank_credit,UTR00096,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+order,ORD00108,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00112,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00113,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+bank_credit,UTR00098,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+order,ORD00111,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00116,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00117,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+bank_credit,UTR00100,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+order,ORD00113,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00119,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00120,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+bank_credit,UTR00102,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+order,ORD00135,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00142,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00143,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+bank_credit,UTR00124,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+order,ORD00150,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00158,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00159,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+bank_credit,UTR00142,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+order,ORD00152,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00161,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00162,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+bank_credit,UTR00144,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+order,ORD00154,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00164,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00165,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+bank_credit,UTR00147,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+order,ORD00172,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00183,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+transaction,TXN00184,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+bank_credit,UTR00168,exception,1,duplicate_detect,0.0,Multiple gateway captures share one order; a human must identify the retry to void.,,,duplicate count > 1,duplicate_capture_human_void_required,2026-07-03T10:46:00+00:00
+order,ORD00006,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00006,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00002,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00007,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00007,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00003,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00014,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00014,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00011,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00015,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00015,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00012,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00016,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00016,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00013,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00022,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00022,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00020,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00023,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00023,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00021,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00034,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00034,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00029,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00035,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00035,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00030,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00036,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00036,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00031,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00037,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00037,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00032,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00038,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00038,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00033,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00039,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00039,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00034,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00040,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00040,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00035,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00049,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00049,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00041,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00054,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00054,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00047,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00063,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00063,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00053,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00064,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00064,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00054,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00067,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00067,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00057,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00068,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00068,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00058,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00076,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00077,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00062,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00078,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00079,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00064,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00079,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00080,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00065,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00081,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00082,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00067,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00082,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00083,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00068,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00083,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00084,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00070,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00095,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00098,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00084,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00098,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00101,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00088,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00101,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00104,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00092,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00107,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00111,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00097,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00112,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00118,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00101,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00114,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00121,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00103,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00116,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00123,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00105,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00118,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00125,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00107,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00120,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00127,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00109,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00122,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00129,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00111,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00124,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00131,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00113,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00133,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00140,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00122,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00134,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00141,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00123,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00136,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00144,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00125,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00138,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00146,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00128,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00139,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00147,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00129,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00141,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00149,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00131,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00142,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00150,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00132,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00143,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00151,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00133,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00151,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00160,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00143,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00156,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00167,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00149,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00157,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00168,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00150,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00158,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00169,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00151,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00159,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00170,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00152,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00160,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00171,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00154,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00165,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00176,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00160,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00169,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00180,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00165,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00171,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00182,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00167,auto_matched,0,exact,1.0,Economic identity validated; settlement lag 2 days and amount drift 0 paise.,,,lag=2d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00009,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00009,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00006,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00019,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00019,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00016,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00021,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00021,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00019,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00043,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00043,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00038,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00044,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00044,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00039,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00055,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00055,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00048,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00065,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00065,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00055,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00066,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00066,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00056,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 4 days and amount drift 0 paise.,,,lag=4d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00089,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00092,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00077,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00094,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00097,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00083,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00099,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00102,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00089,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00105,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00108,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00095,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00127,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00134,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00115,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00129,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00136,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00117,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00149,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00157,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00141,auto_matched,1,timing_window,0.97,Economic identity validated; settlement lag 5 days and amount drift 0 paise.,,,lag=5d; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00010,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00010,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00007,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-07-03T10:46:00+00:00
+order,ORD00011,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -2 paise.,,,lag=2d; drift=-2paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00011,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -2 paise.,,,lag=2d; drift=-2paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00008,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -2 paise.,,,lag=2d; drift=-2paise,,2026-07-03T10:46:00+00:00
+order,ORD00017,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00017,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00014,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-07-03T10:46:00+00:00
+order,ORD00041,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -2 paise.,,,lag=2d; drift=-2paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00041,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -2 paise.,,,lag=2d; drift=-2paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00036,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -2 paise.,,,lag=2d; drift=-2paise,,2026-07-03T10:46:00+00:00
+order,ORD00057,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00057,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00050,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-07-03T10:46:00+00:00
+order,ORD00077,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -2 paise.,,,lag=2d; drift=-2paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00078,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -2 paise.,,,lag=2d; drift=-2paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00063,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -2 paise.,,,lag=2d; drift=-2paise,,2026-07-03T10:46:00+00:00
+order,ORD00080,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift 1 paise.,,,lag=2d; drift=1paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00081,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift 1 paise.,,,lag=2d; drift=1paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00066,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift 1 paise.,,,lag=2d; drift=1paise,,2026-07-03T10:46:00+00:00
+order,ORD00115,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00122,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00104,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -1 paise.,,,lag=2d; drift=-1paise,,2026-07-03T10:46:00+00:00
+order,ORD00137,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -2 paise.,,,lag=2d; drift=-2paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00145,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -2 paise.,,,lag=2d; drift=-2paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00126,auto_matched,1,rounding_tolerance,0.95,Economic identity validated; settlement lag 2 days and amount drift -2 paise.,,,lag=2d; drift=-2paise,,2026-07-03T10:46:00+00:00
+order,ORD00020,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00020,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00017,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00018,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00032,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00032,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00026,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00027,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00053,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00053,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00045,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00046,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00090,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00093,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00078,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00079,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00097,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00100,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00086,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00087,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00100,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00103,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00090,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00091,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00132,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00139,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00120,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00121,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00144,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00152,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00134,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00135,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00145,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00153,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00136,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00137,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00148,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00156,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00139,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00140,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00153,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00163,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00145,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00146,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00166,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00177,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00161,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00162,auto_matched,1,partial,0.94,Multiple bank credits uniquely sum to one gateway net amount.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00001,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00002,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00003,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00004,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00005,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00001,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00002,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00003,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00004,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00005,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00001,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00025,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00026,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00027,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00028,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00029,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00025,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00026,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00027,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00028,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00029,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00023,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00045,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00046,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00047,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00048,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00045,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00046,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00047,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00048,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00040,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00058,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00059,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00060,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00061,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00058,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00059,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00060,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00061,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00051,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00069,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00070,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00071,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00072,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00073,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00069,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00070,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00071,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00072,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00073,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00059,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=5; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00103,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00104,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00106,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00107,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00094,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00109,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00110,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00114,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00115,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00099,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00125,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00126,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00132,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00133,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00114,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00146,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00147,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00154,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00155,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00138,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=2; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00161,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00162,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00163,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00164,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00172,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00173,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00174,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00175,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00155,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00173,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00174,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00175,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+order,ORD00176,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00185,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00186,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00187,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+transaction,TXN00188,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00169,auto_matched,1,batched,0.93,A unique date-consistent transaction subset sums to the bank credit.,,,members=4; drift=0paise,,2026-07-03T10:46:00+00:00
+bank_credit,UTR00005,exception,1,orphan_detect,0.0,Bank credit has no reconcilable ledger or gateway transaction.,,,none,bank_credit_with_no_matching_order,2026-07-03T10:46:00+00:00
+bank_credit,UTR00069,exception,1,orphan_detect,0.0,Bank credit has no reconcilable ledger or gateway transaction.,,,none,bank_credit_with_no_matching_order,2026-07-03T10:46:00+00:00
+bank_credit,UTR00074,exception,1,orphan_detect,0.0,Bank credit has no reconcilable ledger or gateway transaction.,,,none,bank_credit_with_no_matching_order,2026-07-03T10:46:00+00:00
+bank_credit,UTR00127,exception,1,orphan_detect,0.0,Bank credit has no reconcilable ledger or gateway transaction.,,,none,bank_credit_with_no_matching_order,2026-07-03T10:46:00+00:00
+bank_credit,UTR00153,exception,1,orphan_detect,0.0,Bank credit has no reconcilable ledger or gateway transaction.,,,none,bank_credit_with_no_matching_order,2026-07-03T10:46:00+00:00
+bank_credit,UTR00156,exception,1,orphan_detect,0.0,Bank credit has no reconcilable ledger or gateway transaction.,,,none,bank_credit_with_no_matching_order,2026-07-03T10:46:00+00:00
+bank_credit,UTR00157,exception,1,orphan_detect,0.0,Bank credit has no reconcilable ledger or gateway transaction.,,,none,bank_credit_with_no_matching_order,2026-07-03T10:46:00+00:00
+bank_credit,UTR00158,exception,1,orphan_detect,0.0,Bank credit has no reconcilable ledger or gateway transaction.,,,none,bank_credit_with_no_matching_order,2026-07-03T10:46:00+00:00
+bank_credit,UTR00159,exception,1,orphan_detect,0.0,Bank credit has no reconcilable ledger or gateway transaction.,,,none,bank_credit_with_no_matching_order,2026-07-03T10:46:00+00:00
+order,ORD00033,exception,2,agent_verifier_disagreement,0.35,"Proposer linked narration identifiers TXN99999, ORD00033 to TXN00033. Verifier rejected conflicting references: expected TXN00033/ORD00033.","Proposer linked narration identifiers TXN99999, ORD00033 to TXN00033.",Rejected: expected corroborating references TXN00033 and ORD00033.,drift=100paise,proposer_verifier_disagreement,2026-07-03T10:46:00+00:00
+transaction,TXN00033,exception,2,agent_verifier_disagreement,0.35,"Proposer linked narration identifiers TXN99999, ORD00033 to TXN00033. Verifier rejected conflicting references: expected TXN00033/ORD00033.","Proposer linked narration identifiers TXN99999, ORD00033 to TXN00033.",Rejected: expected corroborating references TXN00033 and ORD00033.,drift=100paise,proposer_verifier_disagreement,2026-07-03T10:46:00+00:00
+bank_credit,UTR00028,exception,2,agent_verifier_disagreement,0.35,"Proposer linked narration identifiers TXN99999, ORD00033 to TXN00033. Verifier rejected conflicting references: expected TXN00033/ORD00033.","Proposer linked narration identifiers TXN99999, ORD00033 to TXN00033.",Rejected: expected corroborating references TXN00033 and ORD00033.,drift=100paise,proposer_verifier_disagreement,2026-07-03T10:46:00+00:00
+order,ORD00008,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00008,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00012,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00012,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00013,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00013,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00018,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00018,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00024,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00024,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00030,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00030,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00031,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00031,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00042,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00042,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00050,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00050,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00051,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00051,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00052,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00052,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00056,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00056,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00062,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00062,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00074,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00074,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00084,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00085,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00087,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00090,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00088,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00091,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00091,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00094,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00092,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00095,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00093,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00096,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00096,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00099,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00102,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00105,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00117,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00124,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00119,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00126,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00121,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00128,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00123,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00130,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00128,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00135,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00130,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00137,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00131,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00138,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00140,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00148,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00155,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00166,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00167,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00178,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00168,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00179,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+order,ORD00170,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+transaction,TXN00181,exception,2,agent_abstain,0.0,No narration evidence produced a verifiable unique link.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00004,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00009,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00010,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00015,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00022,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00024,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00025,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00037,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00042,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00043,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00044,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00049,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00052,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00060,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00071,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00075,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00076,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00080,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00081,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00082,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00085,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00093,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00106,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00108,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00110,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00112,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00116,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00118,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00119,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00130,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00148,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00163,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00164,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
+bank_credit,UTR00166,exception,2,agent_abstain,0.0,No transaction could be verified from bank narration.,,,none,agent_abstained,2026-07-03T10:46:00+00:00
