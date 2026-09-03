@@ -23,8 +23,22 @@ st.caption("Deterministic reconciliation, verified residual recovery, and honest
 
 with st.sidebar:
     st.header("Live batch controls")
-    group_count = st.slider("Match groups", 50, 250, 100, 10)
-    hard_multiplier = st.slider("Hard-case intensity", 0.5, 2.0, 1.0, 0.1)
+    group_count = st.slider(
+        "Match groups", 50, 250, 100, 10,
+        help="The number of independent reconciliation cases generated for this run.",
+    )
+    st.caption(
+        "One match group is one reconciliation case. It may contain multiple "
+        "ledger, gateway, or bank records."
+    )
+    hard_multiplier = st.slider(
+        "Hard-case intensity", 0.5, 2.0, 1.0, 0.1,
+        help="Scales the share of ambiguous and evidence-dependent cases in the batch.",
+    )
+    st.caption(
+        "1.0 is the baseline mix. Higher values create a larger residual for "
+        "Tier 2 and human review."
+    )
     if st.button("Regenerate and run", type="primary", use_container_width=True):
         generator = subprocess.run(
             [sys.executable, str(ROOT / "generate_data.py"), "--groups", str(group_count),
